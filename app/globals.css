@@ -8,4 +8,8 @@
     body {
         @apply bg-bg;
     }
+
+    ul {
+        @apply list-disc ml-5
+    }
 }

@@ -6,7 +6,7 @@ import Image from "next/image";
 const Skills = () => {
   return (
     <Section title="Skills">
-      <div className="grid grid-cols-2 md:flex w-full gap-4 cursor-default flex-wrap ">
+      <div className="grid grid-cols-2 md:flex w-full gap-x-8 gap-y-4 cursor-default flex-wrap">
         {[
           "HTML",
           "CSS",
@@ -24,10 +24,10 @@ const Skills = () => {
             key={skill}
             rounded={"rounded-md"}
             className={{
-              body: "md:w-fit w-full",
+              body: "md:w-fit w-full odd:last:col-span-2 ",
             }}
           >
-            <div className="flex items-center justify-center bg-white hover:bg-bg p-2">
+            <div className="flex items-center justify-center bg-white hover:bg-bg p-2 rounded-md">
               <Image
                 alt={skill}
                 className="rounded-full border border-black p-1"
