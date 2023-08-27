@@ -15,6 +15,7 @@ export const blogs_data = [
       "ReactJS",
       "HTML_tags",
       "HTML",
+      "JavaScript",
       "Accordions",
       "Web_crawlers",
       "Conditional_rendering",
