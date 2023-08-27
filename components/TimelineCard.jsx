@@ -20,13 +20,16 @@ const TimelineCard = ({
       className="vertical-timeline-element--work "
       contentStyle={{
         padding: "0px",
+        background: "transparent",
+        boxShadow: "none",
+        WebkitBoxShadow: "none",
       }}
       contentArrowStyle={{
         borderRight: "7px solid  #000000",
         marginLeft: "4px",
       }}
       date={date}
-      iconClassName="flex items-center justify-center bg-white border border-black"
+      iconClassName="flex items-center justify-center bg-white border border-black overflow-hidden"
       icon={
         <Image
           alt={`${company} logo`}
