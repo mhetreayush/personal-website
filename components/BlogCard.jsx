@@ -50,7 +50,7 @@ const BlogCard = ({ title, link, folder, about, tags, date }) => {
             <p className="italic text-gray-800">
               Posted {daysAgo(date)} days ago.
             </p>
-            <p>{about}</p>
+            {about}
           </div>
           <div className="flex w-full gap-4 flex-wrap">
             {tags?.map((tag, idx) => (

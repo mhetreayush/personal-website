@@ -8,11 +8,13 @@ import { VerticalTimeline } from "react-vertical-timeline-component";
 const Experience = () => {
   return (
     <Section title="Experience">
-      <VerticalTimeline lineColor="#000000">
-        {experience_data.map((experience, idx) => (
-          <TimelineCard key={idx} {...experience} />
-        ))}
-      </VerticalTimeline>
+      <div className="flex w-full overflow-x-hidden">
+        <VerticalTimeline lineColor="#000000">
+          {experience_data.map((experience, idx) => (
+            <TimelineCard key={idx} {...experience} />
+          ))}
+        </VerticalTimeline>
+      </div>
     </Section>
   );
 };
