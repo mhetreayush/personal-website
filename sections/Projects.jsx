@@ -107,10 +107,10 @@ const projects = [
 const Projects = () => {
   return (
     <Section title="Projects">
-      <div className="lg:columns-3 md:columns-2 columns-1 gap-4 space-y-2 group">
+      <div className="lg:columns-3 md:columns-2 columns-1 space-x-2 space-y-2 group ">
         {projects.map((project, index) => (
           <div
-            className={`break-inside-avoid pb-2 hover:group-only:blur-0 group-hover:blur-sm transition-all duration-200 ease-in-out`}
+            className={`break-inside-avoid pb-2 hover:group-only:blur-0 group-hover:blur-sm transition-all duration-200 ease-in-out `}
             key={index}
           >
             <AnimatedButton rounded={"rounded-md"}>
@@ -118,7 +118,7 @@ const Projects = () => {
                 <div className="flex justify-between">
                   <p className="font-semibold text-2xl">{project.name}</p>
                   <div className="flex gap-x-2 items-center">
-                    <a href="">
+                    <a href={project.link} target="_blank">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -135,7 +135,7 @@ const Projects = () => {
                       </svg>
                     </a>
 
-                    <a href="">
+                    <a href={project.link} target="_blank">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"

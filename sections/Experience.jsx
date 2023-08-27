@@ -7,7 +7,7 @@ import { VerticalTimeline } from "react-vertical-timeline-component";
 const Experience = () => {
   return (
     <Section title="Experience">
-      <VerticalTimeline>
+      <VerticalTimeline lineColor="#000000">
         <TimelineCard
           company="Salt.pe"
           date="Feb 2023 - May 2023"

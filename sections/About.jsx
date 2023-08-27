@@ -4,22 +4,20 @@ import Section from "@/components/Section";
 const About = () => {
   return (
     <Section title="About Me">
-      <div className="w-fit">
-        <AnimatedButton
-          rounded={"rounded-full"}
-          className={{
-            body: "font-semibold",
-          }}
+      <AnimatedButton
+        rounded={"rounded-full"}
+        className={{
+          body: "font-semibold w-fit ",
+          child: "bg-yellow-200 px-8 text-black text-2xl ",
+        }}
+      >
+        <a
+          target="_blank"
+          href="https://drive.google.com/file/d/1eAssDp4X_U64H14vKTyFNKWHnsBqrDLT/view"
         >
-          <a
-            download="Ayush-Mhetre-Resume.pdf"
-            href="https://drive.google.com/uc?export=download&id=1eAssDp4X_U64H14vKTyFNKWHnsBqrDLT"
-            className="px-8 bg-yellow-200  text-black text-2xl font-extralight rounded-full "
-          >
-            Resume
-          </a>
-        </AnimatedButton>
-      </div>
+          Resume
+        </a>
+      </AnimatedButton>
     </Section>
   );
 };
