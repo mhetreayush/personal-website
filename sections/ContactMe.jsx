@@ -5,7 +5,7 @@ import Section from "@/components/Section";
 const ContactMe = () => {
   return (
     <Section title="Contact Me" className="overflow-x-hidden ">
-      <div className="p-3">
+      <div>
         <AnimatedButton rounded="rounded-md" className={{ child: "bg-white " }}>
           <div className="border border-black rounded-md flex flex-col">
             <div className="flex w-full justify-between items-center px-2 py-2 border-b border-black">

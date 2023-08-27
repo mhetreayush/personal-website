@@ -2,12 +2,13 @@ import { slugify } from "@/lib/utils/slugify";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import AnimatedButton from "./Buttons/AnimatedButton";
 import Image from "next/image";
+import ExternalLinkSVG from "./ExternalLinkSVG";
 
 const TimelineCard = ({
   date,
   company,
   role,
-  children,
+  child,
   link,
   image,
   type = "Internship",
@@ -15,6 +16,7 @@ const TimelineCard = ({
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work "
+      dateClassName="!opacity-100 text-black !font-semibold !text-lg !w-fit bg-white !whitespace-nowrap !h-fit !rounded-lg !m-0 !py-1 !px-2 !mt-3 md:!mt-2"
       contentStyle={{
         padding: "0px",
         background: "transparent",
@@ -26,7 +28,7 @@ const TimelineCard = ({
         marginLeft: "4px",
       }}
       date={date}
-      iconClassName="flex items-center justify-center bg-white border border-black overflow-hidden"
+      iconClassName="flex items-center justify-center bg-white border border-black overflow-hidden "
       icon={
         <Image
           alt={`${company} logo`}
@@ -44,35 +46,20 @@ const TimelineCard = ({
           <h3 className="vertical-timeline-element-title font-semibold text-xl">
             {role}
           </h3>
-          <h6 className="vertical-timeline-element-subtitle italic">
+          <h6 className="vertical-timeline-element-subtitle italic ">
             Employment type: <span className="font-semibold">{type}</span>
           </h6>
-          <a
-            href={link}
-            className="vertical-timeline-element-subtitle italic font-bold flex items-center gap-x-2"
-            target="_blank"
-          >
-            {company}{" "}
-            <span className="inline-block">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-4 h-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                />
-              </svg>
-            </span>
-          </a>
+
+          <ExternalLinkSVG
+            className={
+              "vertical-timeline-element-subtitle italic font-bold flex items-center gap-x-2 "
+            }
+            link={link}
+            text={company}
+          />
         </div>
         <p>Worked on:</p>
-        {children}
+        {child}
       </AnimatedButton>
     </VerticalTimelineElement>
   );
