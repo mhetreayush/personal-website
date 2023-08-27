@@ -1,10 +1,7 @@
 import { slugify } from "@/lib/utils/slugify";
-
-const {
-  VerticalTimelineElement,
-} = require("react-vertical-timeline-component");
-const { default: AnimatedButton } = require("./Buttons/AnimatedButton");
-const { default: Image } = require("next/image");
+import { VerticalTimelineElement } from "react-vertical-timeline-component";
+import AnimatedButton from "./Buttons/AnimatedButton";
+import Image from "next/image";
 
 const TimelineCard = ({
   date,

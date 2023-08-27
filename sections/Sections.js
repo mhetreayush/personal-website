@@ -1,4 +1,4 @@
-import Achievements from "./Achievements";
+import Blogs from "./Blogs";
 import ContactMe from "./ContactMe";
 import Experience from "./Experience";
 import Navbar from "./Navbar";
@@ -11,6 +11,6 @@ export const sections = {
   Experience,
   Projects,
   Skills,
-  Achievements,
+  Blogs,
   ContactMe,
 };

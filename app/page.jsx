@@ -8,7 +8,7 @@ export default async function Home() {
         <sections.Skills />
         <sections.Projects />
         <sections.Experience />
-        <sections.Achievements />
+        {/* <sections.Blogs /> */}
         <sections.ContactMe />
       </main>
     </>

@@ -78,9 +78,9 @@ const ContactForm = () => {
         "service_r0h5wl7",
         "template_mhu8eme",
         {
-          from_name: data.name,
-          message: data.message,
-          from_email: data.email,
+          from_name: data.name.trim(),
+          message: data.message.trim(),
+          from_email: data.email.trim(),
         },
         "tCHlzcE0KIYaaoDg1"
       );

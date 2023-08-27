@@ -6,7 +6,8 @@ const projects = [
   {
     name: "Project 1",
     description: "This is a project1",
-    link: "https://www.google.com",
+    demo: "https://www.google.com",
+    sourceCode: "https://www.google.com",
   },
   {
     name: "Project 2",
@@ -25,7 +26,8 @@ const projects = [
         </ul>
       </>
     ),
-    link: "https://www.google.com",
+    demo: "https://www.google.com",
+    sourceCode: "https://www.google.com",
   },
   {
     name: "Project 3",
@@ -40,7 +42,8 @@ const projects = [
         </ul>
       </>
     ),
-    link: "https://www.google.com",
+    demo: "https://www.google.com",
+    sourceCode: "https://www.google.com",
   },
   {
     name: "Project 4",
@@ -59,7 +62,8 @@ const projects = [
         </ul>
       </>
     ),
-    link: "https://www.google.com",
+    demo: "https://www.google.com",
+    sourceCode: "https://www.google.com",
   },
   {
     name: "Project 5",
@@ -71,7 +75,8 @@ const projects = [
         </ul>
       </>
     ),
-    link: "https://www.google.com",
+    demo: "https://www.google.com",
+    sourceCode: "https://www.google.com",
   },
   {
     name: "Project 6",
@@ -87,7 +92,8 @@ const projects = [
         </ul>
       </>
     ),
-    link: "https://www.google.com",
+    demo: "https://www.google.com",
+    sourceCode: "https://www.google.com",
   },
   {
     name: "Project 7",
@@ -100,7 +106,8 @@ const projects = [
         </ul>
       </>
     ),
-    link: "https://www.google.com",
+    demo: "https://www.google.com",
+    sourceCode: "https://www.google.com",
   },
 ];
 
@@ -118,7 +125,7 @@ const Projects = () => {
                 <div className="flex justify-between">
                   <p className="font-semibold text-2xl">{project.name}</p>
                   <div className="flex gap-x-2 items-center">
-                    <a href={project.link} target="_blank">
+                    <a href={project.demo} target="_blank">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -135,7 +142,7 @@ const Projects = () => {
                       </svg>
                     </a>
 
-                    <a href={project.link} target="_blank">
+                    <a href={project.sourceCode} target="_blank">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
