@@ -56,7 +56,7 @@ const ContactForm = () => {
           className={{ body: "bg-white mt-1 md:w-3/4" }}
         >
           <textarea
-            className="rounded-md w-full underline underline-offset-4 decoration-black/30"
+            className="rounded-md w-full underline underline-offset-4 decoration-black/30 -mb-[6px]"
             type="text"
             rows={5}
             id="message"
