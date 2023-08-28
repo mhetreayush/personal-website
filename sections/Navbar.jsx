@@ -44,7 +44,7 @@ const Links = ({ active, setMobileNav = () => {} }) =>
 
 const Navbar = () => {
   const active = useNavLinkStore((state) => state.active);
-  const [mobileNav, setMobileNav] = useState(true);
+  const [mobileNav, setMobileNav] = useState(false);
   return (
     <nav className="sticky top-0 z-[100] bg-white rounded-b-lg border border-black cursor-default -mt-16 ">
       <div className="container mx-auto  flex w-full  justify-between p-8 py-2 items-center">
