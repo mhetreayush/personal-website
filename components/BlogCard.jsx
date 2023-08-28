@@ -64,7 +64,10 @@ const BlogCard = ({ title, link, folder, about, tags, date }) => {
                   } px-2 p-1 text-black tracking-wide md:text-lg `,
                 }}
               >
-                <strong>#{tag}</strong>
+                <strong>
+                  <span className="font-mono">#</span>
+                  {tag}
+                </strong>
               </AnimatedButton>
             ))}
           </div>

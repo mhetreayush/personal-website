@@ -7,7 +7,12 @@ export const blogs_data = [
       <ul>
         <li>What are accordions?</li>
         <li>How it can affect your SEO.</li>
-        <li>&lt;summary&gt; & &lt;details&gt; tag in HTML</li>
+        <li>
+          <span className="font-mono">
+            {"<summary>"} & {"<details>"}
+          </span>{" "}
+          tag in HTML
+        </li>
       </ul>
     ),
     date: "23-03-2023",
