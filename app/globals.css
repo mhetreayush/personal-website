@@ -3,15 +3,8 @@
 @tailwind utilities;
 
 
-@font-face {
-    font-family: "melon-slices";
-    src: url('/fonts/Melon-Slices.otf');
-}
-
 html{
     scroll-behavior: smooth;
-    font-family: "melon-slices";
-    letter-spacing: 2px;
 }
 @layer components {
     body {

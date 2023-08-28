@@ -8,9 +8,9 @@ export const blogs_data = [
         <li>What are accordions?</li>
         <li>How it can affect your SEO.</li>
         <li>
-          <span className="font-mono">
+          <code>
             {"<summary>"} & {"<details>"}
-          </span>{" "}
+          </code>{" "}
           tag in HTML
         </li>
       </ul>
