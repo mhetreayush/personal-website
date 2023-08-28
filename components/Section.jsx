@@ -16,7 +16,7 @@ const Section = ({ children, title = "Example", className }) => {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 1 }
     );
     observer.observe(sectionRef.current);
   }, []);
