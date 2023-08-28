@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
+html{
+    scroll-behavior: smooth
+}
 @layer components {
     body {
         @apply bg-bg;
@@ -11,5 +12,9 @@
 
     ul {
         @apply list-disc ml-5
+    }
+
+    .offset{
+        @apply before:block before:h-24 before:-mt-3 before:invisible
     }
 }

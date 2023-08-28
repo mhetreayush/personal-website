@@ -4,6 +4,7 @@ import Section from "@/components/Section";
 const About = () => {
   return (
     <Section title="About Me">
+      <div className="h-[50vh]" />
       <AnimatedButton
         rounded={"rounded-full"}
         className={{

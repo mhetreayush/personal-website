@@ -17,6 +17,9 @@ const TimelineCard = ({
     <VerticalTimelineElement
       className="vertical-timeline-element--work "
       dateClassName="!opacity-100 text-black !font-semibold !text-lg !w-fit bg-white !whitespace-nowrap !h-fit !rounded-lg !m-0 !py-1 !px-2 !mt-3 md:!mt-2"
+      intersectionObserverProps={{
+        threshold: 0.5,
+      }}
       contentStyle={{
         padding: "0px",
         background: "transparent",
