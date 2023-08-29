@@ -50,7 +50,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-[100] bg-white rounded-b-lg border border-black cursor-default -mt-16 ">
       <div className="container mx-auto  flex w-full  justify-between p-8 py-2 items-center">
         <a
-          className=" border-2 border-black border-opacity-50 rounded-md"
+          className=" border-2 border-black border-opacity-50 rounded-md overflow-clip"
           href="/"
         >
           <Image
@@ -58,7 +58,7 @@ const Navbar = () => {
             width={50}
             height={50}
             alt="Logo"
-            className="p-1 "
+            className="p-1 hover:scale-110 transition-all duration-300 ease-in-out"
           />
         </a>
         <div className="hidden md:flex gap-x-3">

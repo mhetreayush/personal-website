@@ -1,6 +1,7 @@
 import AnimatedButton from "@/components/Buttons/AnimatedButton";
 import ExternalLinkSVG from "@/components/ExternalLinkSVG";
 import Section from "@/components/Section";
+import Tags from "@/components/Tags";
 import { projects_data } from "@/public/data/projects";
 
 const Projects = () => {
@@ -38,6 +39,11 @@ const Projects = () => {
                   </div>
                 </div>
                 {project.description}
+                {project.tags && (
+                  <div className="flex flex-wrap gap-2">
+                    <Tags tags={project.tags} parentID={index} />
+                  </div>
+                )}
               </div>
             </AnimatedButton>
           </div>

@@ -7,7 +7,7 @@ const Blogs = () => {
     <Section title="Blogs">
       <div className="flex flex-col gap-y-6">
         {blogs_data.map((blog, idx) => (
-          <BlogCard key={idx} {...blog} />
+          <BlogCard key={idx} {...blog} parentID={idx} />
         ))}
       </div>
     </Section>

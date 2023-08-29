@@ -4,6 +4,7 @@ export const projects_data = [
     description: "This is a project1",
     demo: "https://www.google.com",
     sourceCode: "https://www.google.com",
+    tags: ["React", "NodeJS", "MonogDB"],
   },
   {
     name: "Project 2",
@@ -24,6 +25,7 @@ export const projects_data = [
     ),
     demo: "https://www.google.com",
     sourceCode: "https://www.google.com",
+    tags: ["React", "NodeJS", "MonogDB"],
   },
   {
     name: "Project 3",
@@ -40,6 +42,7 @@ export const projects_data = [
     ),
     demo: "https://www.google.com",
     sourceCode: "https://www.google.com",
+    tags: ["React", "NodeJS", "MonogDB"],
   },
   {
     name: "Project 4",
@@ -60,6 +63,7 @@ export const projects_data = [
     ),
     demo: "https://www.google.com",
     sourceCode: "https://www.google.com",
+    tags: ["React", "NodeJS", "MonogDB"],
   },
   {
     name: "Project 5",
@@ -73,6 +77,7 @@ export const projects_data = [
     ),
     demo: "https://www.google.com",
     sourceCode: "https://www.google.com",
+    tags: ["React", "NodeJS", "MonogDB"],
   },
   {
     name: "Project 6",
@@ -90,6 +95,7 @@ export const projects_data = [
     ),
     demo: "https://www.google.com",
     sourceCode: "https://www.google.com",
+    tags: ["React", "NodeJS", "MonogDB"],
   },
   {
     name: "Project 7",
@@ -104,5 +110,6 @@ export const projects_data = [
     ),
     demo: "https://www.google.com",
     sourceCode: "https://www.google.com",
+    tags: ["React", "NodeJS", "MonogDB"],
   },
 ];

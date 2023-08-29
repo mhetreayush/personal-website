@@ -1,13 +1,7 @@
 import Image from "next/image";
 import AnimatedButton from "./Buttons/AnimatedButton";
 import ExternalLinkSVG from "./ExternalLinkSVG";
-
-const colors = [
-  "bg-blue-300",
-  "bg-green-300",
-  "bg-violet-300",
-  "bg-orange-300",
-];
+import Tags from "./Tags";
 
 function parseDate(input) {
   const parts = input.split("-");
@@ -21,7 +15,7 @@ const daysAgo = (date) => {
   const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
   return daysDifference;
 };
-const BlogCard = ({ title, link, folder, about, tags, date }) => {
+const BlogCard = ({ title, link, folder, about, tags, date, parentID }) => {
   return (
     <AnimatedButton rounded="rounded-md" className={{ child: "bg-white " }}>
       <div className="flex flex-col lg:flex-row gap-3 items-center p-4">
@@ -53,23 +47,7 @@ const BlogCard = ({ title, link, folder, about, tags, date }) => {
             {about}
           </div>
           <div className="flex w-full gap-4 flex-wrap">
-            {tags?.map((tag, idx) => (
-              <AnimatedButton
-                key={idx}
-                rounded="rounded-md pointer-default"
-                className={{
-                  body: "h-fit cursor-default",
-                  child: `${
-                    colors[idx % colors.length]
-                  } px-2 p-1 text-black tracking-wide md:text-lg `,
-                }}
-              >
-                <strong>
-                  <span className="font-mono">#</span>
-                  {tag}
-                </strong>
-              </AnimatedButton>
-            ))}
+            {tags && <Tags tags={tags} parentID={parentID} />}
           </div>
         </div>
       </div>

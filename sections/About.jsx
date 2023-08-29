@@ -4,10 +4,49 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <Section title="About Me">
+    <Section title="About Me" className="overflow-clip" childClass="!pb-0">
       <div className="flex flex-col-reverse gap-4 md:grid grid-cols-2 ">
-        <div>
-          <div className="h-[50vh]" />
+        <div className="flex flex-col gap-4">
+          <AnimatedButton
+            rounded={"rounded-md"}
+            className={{
+              child: "bg-white",
+            }}
+          >
+            <div className="max-h-[50vh] p-2 md:p-4 md:text-justify text-lg flex flex-col md:gap-y-4 justify-between overflow-y-auto relative overflow-clip pb-6">
+              <div className="block opacity-60 bg-gradient-to-b from-white via-gray-500 to-black h-5 w-full md:hidden fixed bottom-0 z-[60] -ml-2" />
+              <p>Example text:</p>
+              <ul>
+                <li>
+                  <strong>HTML</strong> is the language that is used to create
+                </li>
+                <li>
+                  <strong>CSS</strong> is the language that is used to design
+                </li>
+                <li>
+                  <strong>JavaScript</strong> is the language that is used to
+                  make the website interactive
+                </li>
+
+                <li>
+                  <strong>React.js</strong> is a JavaScript library that is used
+                  to create user interfaces
+                </li>
+              </ul>
+
+              <p>
+                I am a Front-End Developer. I am a student at the University of
+                Mumbai. I am currently pursuing a Bachelor of Science degree in
+                Information Technology. I am a self-taught Front-End Developer.
+                I have been learning web development for the past 2 years. I
+                have worked on many projects. I have also worked on some
+                freelance projects. I am a hard-working person. I am a
+                self-motivated person. I am a quick learner. I am a team player.
+                I am a good listener. I am a good communicator. I am always
+                ready to learn new things.
+              </p>
+            </div>
+          </AnimatedButton>
           <AnimatedButton
             rounded={"rounded-full"}
             className={{
@@ -40,26 +79,14 @@ const About = () => {
             </a>
           </AnimatedButton>
         </div>
-        <div className="flex h-full w-full items-center justify-center relative">
-          <p className="absolute bg-black text-white border-4 border-white p-4 rounded-md top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-[100]">
-            Better picture here.
-          </p>
-          <AnimatedButton
-            rounded="rounded-full"
-            className={{
-              body: "h-fit",
-            }}
-          >
-            <div className="p-4 rounded-full bg-white relative">
-              <Image
-                className="rounded-full border border-black blur-md"
-                src="/profile.png"
-                width={300}
-                height={300}
-                alt="Ayush Mhetre"
-              />
-            </div>
-          </AnimatedButton>
+
+        <div className=" h-full w-full justify-center items-center hidden md:flex">
+          <Image
+            src="/hero-ill.svg"
+            width={500}
+            height={500}
+            alt="Ayush Mhetre"
+          />
         </div>
       </div>
     </Section>

@@ -35,7 +35,7 @@ const Skills = () => {
                 width={30}
                 height={30}
               />
-              <p className="font-semibold text-lg md:text-xl ">{skill}</p>
+              <strong className="!font-semibold md:text-xl ">{skill}</strong>
             </div>
           </AnimatedButton>
         ))}
