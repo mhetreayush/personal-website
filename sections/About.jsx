@@ -10,16 +10,13 @@ const About = () => {
           <AnimatedButton
             rounded={"rounded-md"}
             className={{
-              child: "bg-white",
+              child:
+                "bg-white relative after:block after:md:hidden after:h-7 after:bg-gradient-to-b after:from-white after:via-gray-500 after:to-black after:bottom-0 after:z-50 after:sticky after:opacity-60 after:rounded-b-md",
             }}
           >
-            <div className="max-h-[50vh] p-2 md:p-4 md:text-justify text-lg flex flex-col md:gap-y-4 justify-between overflow-y-auto relative overflow-clip pb-6">
-              <div className="block opacity-60 bg-gradient-to-b from-white via-gray-500 to-black h-5 w-full md:hidden fixed bottom-0 z-[60] -ml-2" />
+            <div className="max-h-[50vh] md:max-h-full p-2 md:p-4 md:text-justify text-lg flex flex-col md:gap-y-4 justify-between overflow-y-auto relative overflow-clip pb-6">
               <p>Example text:</p>
               <ul>
-                <li>
-                  <strong>HTML</strong> is the language that is used to create
-                </li>
                 <li>
                   <strong>CSS</strong> is the language that is used to design
                 </li>
