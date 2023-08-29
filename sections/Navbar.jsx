@@ -3,6 +3,7 @@
 import AnimatedButton from "@/components/Buttons/AnimatedButton";
 import { slugify } from "@/lib/utils/slugify";
 import useNavLinkStore from "@/store/store";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -48,11 +49,18 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-[100] bg-white rounded-b-lg border border-black cursor-default -mt-16 ">
       <div className="container mx-auto  flex w-full  justify-between p-8 py-2 items-center">
-        <div className="p-1  border-black border-opacity-50 border-[1px] rounded-lg bg-bg">
-          <div className="bg-white  border-black flex  border-opacity-50  border-[1px] rounded-full w-[3rem]  h-[3rem] items-center justify-center">
-            <p className="font-semibold text-xl">am</p>
-          </div>
-        </div>
+        <a
+          className=" border-2 border-black border-opacity-50 rounded-md"
+          href="/"
+        >
+          <Image
+            src="/logo.svg"
+            width={50}
+            height={50}
+            alt="Logo"
+            className="p-1 "
+          />
+        </a>
         <div className="hidden md:flex gap-x-3">
           <Links active={active} />
         </div>
