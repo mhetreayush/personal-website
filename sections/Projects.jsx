@@ -7,14 +7,14 @@ import { projects_data } from "@/public/data/projects";
 const Projects = () => {
   return (
     <Section title="Projects">
-      <div className="lg:columns-3 md:columns-2 columns-1 space-x-2 space-y-2 group ">
+      <div className="lg:columns-3 md:columns-2 columns-1 space-y-2 group ">
         {projects_data.map((project, index) => (
           <div
-            className={`break-inside-avoid pb-2 hover:group-only:blur-0 group-hover:blur-sm transition-all duration-200 ease-in-out `}
+            className={`break-inside-avoid pb-2 w-full hover:group-only:blur-0 group-hover:blur-sm transition-all duration-200 ease-in-out `}
             key={index}
           >
             <AnimatedButton rounded={"rounded-md"}>
-              <div className="flex flex-col space-y-2 bg-white rounded-md p-2">
+              <div className="flex flex-col space-y-2 bg-white rounded-md p-2 pb-4">
                 <div className="flex justify-between">
                   <p className="font-semibold text-2xl">{project.name}</p>
                   <div className="flex gap-x-2 items-center">

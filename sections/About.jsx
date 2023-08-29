@@ -14,34 +14,46 @@ const About = () => {
                 "bg-white relative after:block after:md:hidden after:h-7 after:bg-gradient-to-b after:from-white after:via-gray-500 after:to-black after:bottom-0 after:z-50 after:sticky after:opacity-60 after:rounded-b-md",
             }}
           >
-            <div className="max-h-[50vh] md:max-h-full p-2 md:p-4 md:text-justify text-lg flex flex-col md:gap-y-4 justify-between overflow-y-auto relative overflow-clip pb-6">
-              <p>Example text:</p>
-              <ul>
-                <li>
-                  <strong>CSS</strong> is the language that is used to design
-                </li>
-                <li>
-                  <strong>JavaScript</strong> is the language that is used to
-                  make the website interactive
-                </li>
-
-                <li>
-                  <strong>React.js</strong> is a JavaScript library that is used
-                  to create user interfaces
-                </li>
-              </ul>
-
-              <p>
-                I am a Front-End Developer. I am a student at the University of
-                Mumbai. I am currently pursuing a Bachelor of Science degree in
-                Information Technology. I am a self-taught Front-End Developer.
-                I have been learning web development for the past 2 years. I
-                have worked on many projects. I have also worked on some
-                freelance projects. I am a hard-working person. I am a
-                self-motivated person. I am a quick learner. I am a team player.
-                I am a good listener. I am a good communicator. I am always
-                ready to learn new things.
-              </p>
+            <div className="max-h-[50vh] md:max-h-full p-2 md:p-4 md:text-justify text-lg flex flex-col md:gap-y-2 justify-between overflow-y-auto relative overflow-clip pb-6">
+              <div>
+                <h1 className="font-semibold underline underline-offset-4">
+                  Who am I?
+                </h1>
+                <p>
+                  I am a 3rd year 👨🏼‍🎓 student pursuing B.Tech in 💻 Computer
+                  Science and Engineering from 🏫 Vellore Institute of
+                  Technology, Vellore. I am a passionate 👨🏼‍💻 developer and a tech
+                  enthusiast. I love to ✨ explore new technologies and leverage
+                  them to solve real-life problems. 🕸 I am into Web Development
+                  for almost 2 years and currently working on my Data Structures
+                  and Algorithms. I also keep an understanding of web
+                  fundamentals, security issues and SEO optimization.
+                </p>
+              </div>
+              <div>
+                <h1 className="font-semibold underline underline-offset-4">
+                  What do I do?
+                </h1>
+                <p>
+                  I am a Full Stack Web Developer strong in frontend
+                  development. I love building beautiful and responsive
+                  websites.
+                </p>
+              </div>
+              <div>
+                <h1 className="font-semibold underline underline-offset-4">
+                  What am I looking for?
+                </h1>
+                <p>
+                  I am looking for a Software Developer Internships in a
+                  company/startup where I can learn and grow as a developer and
+                  contribute to the company&apos;s growth. My strong area is
+                  full stack web development and I am currently working on my
+                  Data Structures and Algorithms. But I am also interested in
+                  system design so I am continuously learning about different
+                  system design patterns, architectures and scalability.
+                </p>
+              </div>
             </div>
           </AnimatedButton>
           <AnimatedButton
