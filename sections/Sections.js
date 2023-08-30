@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import About from "./About";
+import Footer from "./Footer";
 export const sections = {
   Navbar,
   About,
@@ -13,4 +14,5 @@ export const sections = {
   Skills,
   Blogs,
   ContactMe,
+  Footer,
 };

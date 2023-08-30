@@ -14,7 +14,7 @@ const About = () => {
                 "bg-white relative after:block after:md:hidden after:h-7 after:bg-gradient-to-b after:from-white after:via-gray-500 after:to-black after:bottom-0 after:z-50 after:sticky after:opacity-60 after:rounded-b-md",
             }}
           >
-            <div className="max-h-[50vh] md:max-h-full p-2 md:p-4 md:text-justify text-lg flex flex-col md:gap-y-2 justify-between overflow-y-auto relative overflow-clip pb-6">
+            <div className="max-h-[50vh] md:max-h-full p-2 md:p-4 md:text-justify text-lg flex flex-col gap-y-2 justify-between overflow-y-auto relative overflow-clip pb-6">
               <div>
                 <h1 className="font-semibold underline underline-offset-4">
                   Who am I?

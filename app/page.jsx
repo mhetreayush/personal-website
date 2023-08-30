@@ -11,6 +11,7 @@ export default function Home() {
         <sections.Blogs />
         <sections.ContactMe />
       </main>
+      <sections.Footer />
     </>
   );
 }

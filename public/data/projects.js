@@ -134,8 +134,9 @@ export const projects_data = [
           <li>
             Used intersection-observer API for dynamic navbar highlighting.
           </li>
-          <li>Designed ad developed by me.</li>
+          <li>Designed and developed by me.</li>
           <li>Used Zustand for state management.</li>
+          <li>Used EmailJS for contact me form.</li>
         </ul>
       </>
     ),
@@ -148,6 +149,7 @@ export const projects_data = [
       "Dynamic_Routing",
       "Personal_Website",
       "Intersection_Observer_API",
+      "EmailJS",
     ],
   },
 ];
