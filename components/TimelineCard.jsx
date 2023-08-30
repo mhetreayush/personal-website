@@ -61,7 +61,7 @@ const TimelineCard = ({
             text={company}
           />
         </div>
-        <p>Worked on:</p>
+        <p>Highlights:</p>
         {child}
       </AnimatedButton>
     </VerticalTimelineElement>

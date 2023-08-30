@@ -6,9 +6,12 @@ export const experience_data = [
     link: "https://salt.pe",
     child: (
       <ul>
-        <li>Worked on point</li>
-        <li>Worked on point</li>
-        <li>Worked on point</li>
+        <li>Contributed to a google chrome extension.</li>
+        <li>Used styled components & TailwindCSS for styling.</li>
+        <li>Used MUI for components.</li>
+        <li>Implemented Figma designs.</li>
+        <li>Collaborated through GitHub.</li>
+        <li>Created re-usable components.</li>
       </ul>
     ),
   },
@@ -20,9 +23,13 @@ export const experience_data = [
     image: "prishapolicy.jpg",
     child: (
       <ul>
-        <li>Worked on point</li>
-        <li>Worked on point</li>
-        <li>Worked on point</li>
+        <li>Worked on a monorepo.</li>
+        <li>Worked on typescript codebase.</li>
+        <li>
+          Used and created reusable components to implement Figma designs.
+        </li>
+        <li>Attended daily stand up calls.</li>
+        <li>Collaborated through GtiHub.</li>
       </ul>
     ),
   },

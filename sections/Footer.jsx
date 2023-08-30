@@ -21,7 +21,7 @@ const Footer = () => {
     <footer className="container mx-auto  flex md:flex-row flex-col-reverse gap-y-2 w-full  justify-between p-8 py-4 md:items-center bg-white border border-black rounded-t-md">
       <div className="mt-2 md:mt-0">
         <p>Designed & Developed by</p>
-        <p>Ayush Mhetre</p>
+        <p className="font-semibold text-lg">Ayush Mhetre</p>
         <a
           href="mailto:mhetreayush1719@gmail.com"
           className="flex items-center gap-x-2 mt-2"

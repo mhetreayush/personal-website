@@ -16,7 +16,7 @@ const About = () => {
           >
             <div className="max-h-[50vh] md:max-h-full p-2 md:p-4 md:text-justify text-lg flex flex-col gap-y-2 justify-between overflow-y-auto relative overflow-clip pb-6">
               <div>
-                <h1 className="font-semibold underline underline-offset-4">
+                <h1 className="font-semibold underline underline-offset-8 mb-1">
                   Who am I?
                 </h1>
                 <p>
@@ -31,7 +31,7 @@ const About = () => {
                 </p>
               </div>
               <div>
-                <h1 className="font-semibold underline underline-offset-4">
+                <h1 className="font-semibold underline underline-offset-8 mb-1">
                   What do I do?
                 </h1>
                 <p>
@@ -41,7 +41,7 @@ const About = () => {
                 </p>
               </div>
               <div>
-                <h1 className="font-semibold underline underline-offset-4">
+                <h1 className="font-semibold underline underline-offset-8 mb-1">
                   What am I looking for?
                 </h1>
                 <p>

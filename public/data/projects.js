@@ -1,6 +1,7 @@
 export const projects_data = [
   {
     name: "DoGether",
+    type: "Hackathon - Self made",
     description: (
       <>
         <p>
@@ -23,6 +24,7 @@ export const projects_data = [
   },
   {
     name: "Research Pilot",
+    type: "Hackathon - Self made",
     description: (
       <>
         <p>
@@ -65,6 +67,7 @@ export const projects_data = [
   },
   {
     name: "Google Clone",
+    type: "Personal - Tutorial based",
     description: (
       <>
         <p>Working clone of Google Search Engine.</p>
@@ -85,6 +88,7 @@ export const projects_data = [
   },
   {
     name: "Drag and Drop Todo App",
+    type: "Personal - Tutorial based",
     description: (
       <>
         <p>Todo app that uses drag and drop for organization of tasks.</p>
@@ -101,6 +105,7 @@ export const projects_data = [
   },
   {
     name: "Instagram clone",
+    type: "Personal - Tutorial based",
     description: (
       <>
         <p>Working clone of social media app, Instagram</p>
@@ -127,6 +132,7 @@ export const projects_data = [
   },
   {
     name: "Personal Website",
+    type: "Personal - Self made",
     description: (
       <>
         <p>My personal (this) website.</p>

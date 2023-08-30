@@ -1,22 +1,37 @@
+"use client";
 import AnimatedButton from "@/components/Buttons/AnimatedButton";
 import ExternalLinkSVG from "@/components/ExternalLinkSVG";
 import Section from "@/components/Section";
 import Tags from "@/components/Tags";
 import { projects_data } from "@/public/data/projects";
+import { useState } from "react";
 
 const Projects = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [hoveredID, setHoveredID] = useState(null);
   return (
     <Section title="Projects">
-      <div className="lg:columns-3 md:columns-2 columns-1 space-y-2 group ">
+      <div className="lg:columns-3 md:columns-2 columns-1 space-y-2 ">
         {projects_data.map((project, index) => (
           <div
-            className={`break-inside-avoid pb-2 w-full hover:group-only:blur-0 group-hover:blur-sm transition-all duration-200 ease-in-out `}
+            className={`break-inside-avoid pb-2 w-full blur-0 transition-all duration-200 ease-in-out 
+            ${isHovered && hoveredID != index && "!blur-sm"}
+            `}
             key={index}
+            onMouseEnter={() => {
+              setIsHovered(true);
+              setHoveredID(index);
+            }}
+            onMouseLeave={() => {
+              setIsHovered(false);
+              setHoveredID(null);
+            }}
           >
             <AnimatedButton rounded={"rounded-md"}>
               <div className="flex flex-col space-y-2 bg-white rounded-md p-2 pb-4">
                 <div className="flex justify-between">
                   <p className="font-semibold text-2xl">{project.name}</p>
+
                   <div className="flex gap-x-2 items-center">
                     <ExternalLinkSVG link={project.demo} />
 
@@ -38,6 +53,10 @@ const Projects = () => {
                     </a>
                   </div>
                 </div>
+                <p>
+                  Project type:{" "}
+                  <span className="font-semibold ">{project.type}</span>
+                </p>
                 {project.description}
                 {project.tags && (
                   <div className="flex flex-wrap gap-2">
