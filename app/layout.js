@@ -8,6 +8,10 @@ import "react-vertical-timeline-component/style.min.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <meta
+        name="google-site-verification"
+        content="LAFLPJO73XDxXz1ZA7Oa8g_g3xdfcL24i9sEhlt9G6o"
+      />
       <body>{children}</body>
       <Analytics />
     </html>
