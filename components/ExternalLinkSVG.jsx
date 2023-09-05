@@ -1,6 +1,6 @@
-const ExternalLinkSVG = ({ link, text, className }) => {
+const ExternalLinkSVG = ({ link, text, className, name = "" }) => {
   return (
-    <a href={link} target="_blank" className={className}>
+    <a href={link} target="_blank" className={className} aria-label={name}>
       {text}{" "}
       <span className="inline-block">
         <svg

@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
         name="google-site-verification"
         content="LAFLPJO73XDxXz1ZA7Oa8g_g3xdfcL24i9sEhlt9G6o"
       />
+      <meta name="theme-color" content="#F5EFE7" />
       <body>{children}</body>
       <Analytics />
     </html>

@@ -27,6 +27,7 @@ const Links = ({ active, setMobileNav = () => {} }) =>
           setMobileNav(false);
           console.log("clicked");
         }}
+        aria-label={link}
       >
         <AnimatedButton
           rounded="rounded-md"
@@ -52,6 +53,7 @@ const Navbar = () => {
         <a
           className=" border-2 border-black border-opacity-50 rounded-md overflow-clip"
           href="/"
+          aria-label="Home"
         >
           <Image
             src="/logo.svg"
@@ -69,6 +71,7 @@ const Navbar = () => {
             <button
               className="p-2 rounded-md border-black border-opacity-50 border-[1px] bg-bg"
               onClick={() => setMobileNav(true)}
+              aria-label="Open Mobile Nav"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -96,6 +99,7 @@ const Navbar = () => {
                 <button
                   className="p-2 rounded-md border-black border-opacity-50 border-[1px] bg-bg "
                   onClick={() => setMobileNav(false)}
+                  aria-label="Close Mobile Nav"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

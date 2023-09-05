@@ -2,6 +2,7 @@ import Image from "next/image";
 import AnimatedButton from "./Buttons/AnimatedButton";
 import ExternalLinkSVG from "./ExternalLinkSVG";
 import Tags from "./Tags";
+import { slugify } from "@/lib/utils/slugify";
 
 function parseDate(input) {
   const parts = input.split("-");
@@ -20,7 +21,11 @@ const BlogCard = ({ title, link, folder, about, tags, date, parentID }) => {
     <AnimatedButton rounded="rounded-md" className={{ child: "bg-white " }}>
       <div className="flex flex-col lg:flex-row gap-3 items-center p-4">
         <div className="border border-black rounded-md h-fit md:min-w-[500px] max-h-[300px] max-w-[500px] overflow-clip ">
-          <a href={link} target="_blank">
+          <a
+            href={link}
+            target="_blank"
+            aria-label={"Blog: " + slugify(title, "-")}
+          >
             <Image
               src={`/blog-assets/${folder}/cover.png`}
               alt={title}
@@ -38,7 +43,10 @@ const BlogCard = ({ title, link, folder, about, tags, date, parentID }) => {
                 <p className="md:text-2xl font-semibold ">{title}</p>
               </div>
               <div>
-                <ExternalLinkSVG link={link} />
+                <ExternalLinkSVG
+                  link={link}
+                  name={"Blog: " + slugify(title, "-")}
+                />
               </div>
             </div>
             <p className="italic text-gray-800">

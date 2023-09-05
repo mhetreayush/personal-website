@@ -153,7 +153,11 @@ const ContactForm = () => {
         }}
       >
         {sentState == "idle" && (
-          <button type="submit" className="p-2 flex gap-x-2 items-center">
+          <button
+            aria-label="Send Message"
+            type="submit"
+            className="p-2 flex gap-x-2 items-center"
+          >
             Send
             <svg
               xmlns="http://www.w3.org/2000/svg"

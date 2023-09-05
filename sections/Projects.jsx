@@ -3,6 +3,7 @@ import AnimatedButton from "@/components/Buttons/AnimatedButton";
 import ExternalLinkSVG from "@/components/ExternalLinkSVG";
 import Section from "@/components/Section";
 import Tags from "@/components/Tags";
+import { slugify } from "@/lib/utils/slugify";
 import { projects_data } from "@/public/data/projects";
 import { useState } from "react";
 
@@ -33,9 +34,16 @@ const Projects = () => {
                   <p className="font-semibold text-2xl">{project.name}</p>
 
                   <div className="flex gap-x-2 items-center">
-                    <ExternalLinkSVG link={project.demo} />
+                    <ExternalLinkSVG
+                      link={project.demo}
+                      name={slugify(project.name + " demo", "-")}
+                    />
 
-                    <a href={project.sourceCode} target="_blank">
+                    <a
+                      href={project.sourceCode}
+                      target="_blank"
+                      aria-label={slugify(project.name + " demo", "-")}
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"

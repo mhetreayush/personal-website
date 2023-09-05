@@ -47,7 +47,13 @@ const Footer = () => {
       </div>
       <div className="flex gap-x-4 items-center justify-center">
         {links.map((link, idx) => (
-          <a key={idx} href={link.url} alt={link.label} target="_blank">
+          <a
+            key={idx}
+            href={link.url}
+            alt={link.label}
+            target="_blank"
+            aria-label={link.label}
+          >
             <Image
               src={`/icons/${slugify(link.label)}.svg`}
               width={36}
