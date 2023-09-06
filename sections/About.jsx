@@ -27,7 +27,7 @@ const About = () => {
                   them to solve real-life problems. 🕸 I am into Web Development
                   for almost 2 years and currently working on my Data Structures
                   and Algorithms. I also keep an understanding of web
-                  fundamentals, security issues and SEO optimization.
+                  fundamentals, security issues and SEO.
                 </p>
               </div>
               <div>
