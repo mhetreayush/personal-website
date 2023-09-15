@@ -1,4 +1,5 @@
 import { sections } from "@/sections/Sections";
+
 export default function Home() {
   return (
     <>

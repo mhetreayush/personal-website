@@ -14,6 +14,7 @@ const Skills = () => {
           "React.JS",
           "Next.JS",
           "TailwindCSS",
+          "Styled Components",
           "Bootstrap",
           "Express.JS",
           "Firebase",
@@ -25,7 +26,7 @@ const Skills = () => {
             key={skill}
             rounded={"rounded-md"}
             className={{
-              body: "md:w-fit w-full odd:last:col-span-2 ",
+              body: "md:w-fit w-full odd:last:col-span-2 col-span-2 !h-max sm:col-span-1",
             }}
           >
             <div className="flex items-center justify-center bg-white hover:bg-bg p-2 md:px-4 rounded-md gap-x-2 md:gap-x-4">
@@ -36,7 +37,9 @@ const Skills = () => {
                 width={30}
                 height={30}
               />
-              <strong className="!font-semibold md:text-xl ">{skill}</strong>
+              <strong className="!font-semibold md:text-xl break-all">
+                {skill}
+              </strong>
             </div>
           </AnimatedButton>
         ))}

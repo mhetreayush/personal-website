@@ -1,5 +1,16 @@
 export const experience_data = [
   {
+    company: "Devfolio",
+    date: "September 2023 - Present",
+    role: "Frontend Web Developer",
+    link: "https://devfolio.co/",
+    child: (
+      <ul>
+        <li>Work as frontend web developer.</li>
+      </ul>
+    ),
+  },
+  {
     company: "Salt.pe",
     date: "Feb 2023 - May 2023",
     role: "Frontend Web Developer",
