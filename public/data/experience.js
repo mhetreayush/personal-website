@@ -6,7 +6,7 @@ export const experience_data = [
     link: "https://devfolio.co/",
     child: (
       <ul>
-        <li>Work as frontend web developer.</li>
+        <li>Working as frontend web developer.</li>
       </ul>
     ),
   },
