@@ -109,6 +109,7 @@ const ContactForm = () => {
                 className="rounded-md w-full underline underline-offset-4 decoration-black/30"
                 type="text"
                 id="name"
+                required
                 {...register("name")}
               />
             </AnimatedButton>
@@ -123,6 +124,7 @@ const ContactForm = () => {
                 className="rounded-md w-full underline underline-offset-4 decoration-black/30"
                 type="email"
                 id="email"
+                required
                 {...register("email")}
               />
             </AnimatedButton>
@@ -138,6 +140,7 @@ const ContactForm = () => {
                 type="text"
                 rows={5}
                 id="message"
+                required
                 {...register("message")}
               />
             </AnimatedButton>
