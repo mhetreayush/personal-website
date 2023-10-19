@@ -75,14 +75,14 @@ const ContactForm = () => {
     try {
       setSentState("sending");
       const res = await emailjs.send(
-        "service_r0h5wl7",
-        "template_mhu8eme",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE,
         {
           from_name: data.name.trim(),
           message: data.message.trim(),
           from_email: data.email.trim(),
         },
-        "tCHlzcE0KIYaaoDg1"
+        process.env.NEXT_PUBLIC_EMAILJS_ID
       );
       if (res.status == 200) {
         setSentState("sent");
