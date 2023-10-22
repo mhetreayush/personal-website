@@ -8,16 +8,13 @@ const Section = ({ children, title = "Example", className }) => {
   const setActive = useNavLinkStore((state) => state.setActive);
   const sectionRef = useRef(null);
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActive(slugify(title));
-          }
-        });
-      },
-      { threshold: 0.7 }
-    );
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActive(slugify(title));
+        }
+      });
+    });
     observer.observe(sectionRef.current);
   }, []);
   return (
