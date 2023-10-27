@@ -11,6 +11,7 @@ const Skills = () => {
           "HTML",
           "CSS",
           "JavaScript",
+          "TypeScript",
           "React.JS",
           "Next.JS",
           "TailwindCSS",
