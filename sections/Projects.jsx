@@ -11,7 +11,7 @@ const Projects = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [hoveredID, setHoveredID] = useState(null);
   return (
-    <Section title="Projects">
+    <Section title="Projects" threshold={0.3}>
       <div className="lg:columns-3 md:columns-2 columns-1 space-y-2 ">
         {projects_data.map((project, index) => (
           <div

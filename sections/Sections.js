@@ -6,7 +6,7 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import About from "./About";
 import Footer from "./Footer";
-export const sections = {
+export {
   Navbar,
   About,
   Experience,

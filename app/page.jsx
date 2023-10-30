@@ -1,18 +1,27 @@
-import { sections } from "@/sections/Sections";
+import {
+  Navbar,
+  About,
+  Skills,
+  Projects,
+  Experience,
+  Blogs,
+  ContactMe,
+  Footer,
+} from "@/sections/Sections";
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
-      <sections.Navbar />
+      <Navbar />
       <main className="flex min-h-screen flex-col px-4 md:px-8 container mx-auto pb-8 md:gap-y-14">
-        <sections.About />
-        <sections.Skills />
-        <sections.Projects />
-        <sections.Experience />
-        <sections.Blogs />
-        <sections.ContactMe />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Blogs />
+        <ContactMe />
       </main>
-      <sections.Footer />
+      <Footer />
     </>
   );
 }
