@@ -7,6 +7,14 @@ const links = [
     url: "https://github.com/mhetreayush",
   },
   {
+    label: "StackOverflow",
+    url: "https://stackoverflow.com/users/22811320/ayush-mhetre",
+  },
+  {
+    label: "Medium",
+    url: "https://medium.com/@mhetreayush1719",
+  },
+  {
     label: "LinkedIn",
     url: "https://www.linkedin.com/in/ayush-mhetre-662709227/",
   },
