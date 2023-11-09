@@ -59,7 +59,7 @@ const About = () => {
           <AnimatedButton
             rounded={"rounded-full"}
             className={{
-              body: "font-semibold text-center md:w-fit ",
+              body: "font-semibold text-center md:w-fit",
               child: "bg-yellow-200   text-black text-2xl ",
             }}
           >
@@ -89,7 +89,7 @@ const About = () => {
           </AnimatedButton>
         </div>
 
-        <div className=" h-full w-full justify-center items-center hidden md:flex">
+        <div className=" h-full w-full justify-center items-center hidden md:flex animate-illustrationBounce">
           <Image
             src="/hero-ill.svg"
             width={500}
