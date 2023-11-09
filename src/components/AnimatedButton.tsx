@@ -1,4 +1,19 @@
-const AnimatedButton = ({ children, rounded, className, active }) => {
+type AnimatedButtonProps = {
+  children: React.ReactNode;
+  rounded: string;
+  className?: {
+    body?: string;
+    child?: string;
+  };
+  active?: boolean;
+};
+
+const AnimatedButton = ({
+  children,
+  rounded,
+  className,
+  active,
+}: AnimatedButtonProps) => {
   return (
     <div className={`relative flex ${className?.body && className.body}`}>
       <div

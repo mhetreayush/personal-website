@@ -1,7 +1,12 @@
 import { slugify } from "@/lib/utils/slugify";
 import Image from "next/image";
 
-const links = [
+type LinkType = {
+  label: string;
+  url: string;
+};
+
+const links: LinkType[] = [
   {
     label: "Github",
     url: "https://github.com/mhetreayush",
@@ -42,7 +47,7 @@ const Footer = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6"
+                className="w-6 h-6"
               >
                 <path
                   stroke-linecap="round"
@@ -59,7 +64,6 @@ const Footer = () => {
             <a
               key={idx}
               href={link.url}
-              alt={link.label}
               target="_blank"
               aria-label={link.label}
             >

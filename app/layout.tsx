@@ -5,7 +5,11 @@ export const metadata = {
   description: "Ayush Mhetre's personal website",
 };
 import "react-vertical-timeline-component/style.min.css";
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <meta

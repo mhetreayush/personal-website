@@ -1,6 +1,6 @@
 "use client";
 
-import AnimatedButton from "@/components/Buttons/AnimatedButton";
+import AnimatedButton from "@/components/AnimatedButton";
 import { slugify } from "@/lib/utils/slugify";
 import useNavLinkStore from "@/store/store";
 import Image from "next/image";
@@ -16,17 +16,19 @@ const linksArray = [
   "Contact Me",
 ];
 
-const Links = ({ active, setMobileNav = () => {} }) =>
+type LinksProps = {
+  active: string;
+  setMobileNav?: (value: boolean) => void;
+};
+
+const Links = ({ active, setMobileNav = () => {} }: LinksProps) =>
   linksArray.map((link, index) => {
     const newLink = slugify(link);
     return (
       <Link
         href={`#${newLink}`}
         key={index}
-        onClick={() => {
-          setMobileNav(false);
-          console.log("clicked");
-        }}
+        onClick={() => setMobileNav(false)}
         aria-label={link}
       >
         <AnimatedButton

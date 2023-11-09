@@ -1,4 +1,6 @@
-export const slugify = (text, delim) =>
+type SlugifyPropsTypes = (text: string, delim?: string) => string;
+
+export const slugify: SlugifyPropsTypes = (text, delim) =>
   text
     .toString()
     .toLowerCase()

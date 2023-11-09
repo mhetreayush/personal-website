@@ -1,22 +1,41 @@
 import Image from "next/image";
-import AnimatedButton from "./Buttons/AnimatedButton";
+import AnimatedButton from "./AnimatedButton";
 import ExternalLinkSVG from "./ExternalLinkSVG";
 import Tags from "./Tags";
 import { slugify } from "@/lib/utils/slugify";
 
-function parseDate(input) {
-  const parts = input.split("-");
-  return new Date(parts[2], parts[1] - 1, parts[0]);
+function parseDate(input: string) {
+  const [day, month, year] = input.split("-");
+  return new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
 }
 
-const daysAgo = (date) => {
+const daysAgo = (date: string) => {
   const currentDate = new Date();
   const inputDate = parseDate(date);
-  const timeDifference = currentDate - inputDate;
+  const timeDifference = currentDate.getTime() - inputDate.getTime();
   const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
   return daysDifference;
 };
-const BlogCard = ({ title, link, folder, about, tags, date, parentID }) => {
+
+type BlogCardProps = {
+  title: string;
+  link: string;
+  folder: string;
+  about: string | React.ReactNode;
+  tags: string[];
+  date: string;
+  parentID: number;
+};
+
+const BlogCard = ({
+  title,
+  link,
+  folder,
+  about,
+  tags,
+  date,
+  parentID,
+}: BlogCardProps) => {
   return (
     <AnimatedButton rounded="rounded-md" className={{ child: "bg-white " }}>
       <div className="flex flex-col lg:flex-row gap-3 items-center p-4">

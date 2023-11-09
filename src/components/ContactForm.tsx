@@ -1,7 +1,7 @@
 "use client";
 
 import { useForm } from "react-hook-form";
-import AnimatedButton from "./Buttons/AnimatedButton";
+import AnimatedButton from "./AnimatedButton";
 import emailjs from "@emailjs/browser";
 import { useEffect, useState } from "react";
 
@@ -71,12 +71,12 @@ const ContactForm = () => {
       setShowError(false);
     }, 4000);
   };
-  const onSubmit = async (data) => {
+  const onSubmit = async (data: any) => {
     try {
       setSentState("sending");
       const res = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE as string,
         {
           from_name: data.name.trim(),
           message: data.message.trim(),
@@ -137,7 +137,6 @@ const ContactForm = () => {
             >
               <textarea
                 className="rounded-md w-full underline underline-offset-4 decoration-black/30 -mb-[6px]"
-                type="text"
                 rows={5}
                 id="message"
                 required

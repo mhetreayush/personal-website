@@ -4,22 +4,43 @@ import { slugify } from "@/lib/utils/slugify";
 import useNavLinkStore from "@/store/store";
 import { useEffect, useRef } from "react";
 
-const Section = ({ children, title = "Example", className, threshold }) => {
+type SectionProps = {
+  children: React.ReactNode;
+  title?: string;
+  className?: string;
+  threshold?: number;
+};
+
+const Section = ({
+  children,
+  title = "Example",
+  className,
+  threshold,
+}: SectionProps) => {
   const setActive = useNavLinkStore((state) => state.setActive);
   const sectionRef = useRef(null);
   useEffect(() => {
     const observer = new IntersectionObserver(
-      (sectionRef) => {
-        if (sectionRef[0].isIntersecting) {
+      ([entry]) => {
+        if (entry.isIntersecting) {
           setActive(slugify(title));
         }
       },
       {
-        threshold: threshold ?? 0.5,
+        threshold: threshold || 0.5,
       }
     );
-    observer.observe(sectionRef.current);
-  }, []);
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+    return () => {
+      if (sectionRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, [setActive, threshold, title]);
   return (
     <div
       className={`relative  ${className} offset`}

@@ -1,4 +1,7 @@
-export const experience_data = [
+import React from "react";
+import { ExperienceType } from "./types";
+
+export const experience_data: ExperienceType[] = [
   {
     company: "Devfolio",
     date: "September 2023 - Present",
@@ -45,3 +48,7 @@ export const experience_data = [
     ),
   },
 ];
+
+const Experience = () => null;
+
+export default Experience;

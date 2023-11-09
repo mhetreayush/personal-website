@@ -1,8 +1,18 @@
 import { slugify } from "@/lib/utils/slugify";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
-import AnimatedButton from "./Buttons/AnimatedButton";
+import AnimatedButton from "./AnimatedButton";
 import Image from "next/image";
 import ExternalLinkSVG from "./ExternalLinkSVG";
+
+type TimelineCardProps = {
+  date: string;
+  company: string;
+  role: string;
+  child: React.ReactNode;
+  link: string;
+  image?: string;
+  type?: string;
+};
 
 const TimelineCard = ({
   date,
@@ -12,7 +22,7 @@ const TimelineCard = ({
   link,
   image,
   type = "Internship",
-}) => {
+}: TimelineCardProps) => {
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work "

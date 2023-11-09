@@ -1,10 +1,10 @@
-import AnimatedButton from "@/components/Buttons/AnimatedButton";
+import AnimatedButton from "@/components/AnimatedButton";
 import Section from "@/components/Section";
 import Image from "next/image";
 
 const About = () => {
   return (
-    <Section title="About Me" className="overflow-clip" childClass="!pb-0">
+    <Section title="About Me" className="overflow-clip">
       <div className="flex flex-col-reverse gap-4 md:grid grid-cols-2 ">
         <div className="flex flex-col gap-4">
           <AnimatedButton

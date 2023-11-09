@@ -1,15 +1,15 @@
 "use client";
-import AnimatedButton from "@/components/Buttons/AnimatedButton";
+import AnimatedButton from "@/components/AnimatedButton";
 import ExternalLinkSVG from "@/components/ExternalLinkSVG";
 import Section from "@/components/Section";
 import Tags from "@/components/Tags";
 import { slugify } from "@/lib/utils/slugify";
-import { projects_data } from "@/public/data/projects";
+import { projects_data } from "@/assets/data/projects";
 import { useState } from "react";
 
 const Projects = () => {
   const [isHovered, setIsHovered] = useState(false);
-  const [hoveredID, setHoveredID] = useState(null);
+  const [hoveredID, setHoveredID] = useState<null | number>(null);
   return (
     <Section title="Projects" threshold={0.3}>
       <div className="lg:columns-3 md:columns-2 columns-1 space-y-2 ">

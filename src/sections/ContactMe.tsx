@@ -1,4 +1,4 @@
-import AnimatedButton from "@/components/Buttons/AnimatedButton";
+import AnimatedButton from "@/components/AnimatedButton";
 import ContactForm from "@/components/ContactForm";
 import Section from "@/components/Section";
 

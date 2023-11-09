@@ -1,4 +1,6 @@
-export const blogs_data = [
+import { BlogType } from "./types";
+
+export const blogs_data: BlogType[] = [
   {
     link: "https://medium.com/@mhetreayush1719/are-you-sure-about-your-accordions-898e1b65b42",
     title: "You might be building accordions wrong!",
@@ -30,3 +32,7 @@ export const blogs_data = [
     ],
   },
 ];
+
+const Blogs = () => null;
+
+export default Blogs;
