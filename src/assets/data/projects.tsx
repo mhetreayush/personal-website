@@ -139,6 +139,7 @@ export const projects_data: ProjectType[] = [
       <>
         <p>My personal (this) website.</p>
         <ul>
+          <li>Complete project is written in TypeScript</li>
           <li>
             Used intersection-observer API for dynamic navbar highlighting.
           </li>
