@@ -33,7 +33,7 @@ const headers = {
   Accept: "application/json",
 };
 
-const fetchMyMediumID = async (): Promise<string> => {
+const fetchMyMediumUsername = async (): Promise<string> => {
   try {
     const response = await fetch(`https://api.medium.com/v1/me`, {
       headers,
@@ -41,7 +41,7 @@ const fetchMyMediumID = async (): Promise<string> => {
     const { data } = await response.json();
     return data?.username ?? "";
   } catch (error) {
-    errorLogger("fetchMyMediumID", error);
+    errorLogger("fetchMyMediumUsername", error);
     return "";
   }
 };
@@ -64,7 +64,7 @@ const useFetchMediumArticles = () => {
     const fetchData = async () => {
       try {
         setApiState({ status: "loading" });
-        const username = await fetchMyMediumID();
+        const username = await fetchMyMediumUsername();
         const articles = await fetchMyStoriesUsingUsername(username);
         setArticles(articles);
         setApiState({ status: "success" });
