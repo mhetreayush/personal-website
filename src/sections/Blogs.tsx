@@ -1,6 +1,6 @@
 import { BlogCard } from "@/components/BlogCard";
 import { Section } from "@/components/Section";
-import { blogs_data } from "@/assets/data/blogs";
+import { blogs_data } from "@/assets/data";
 
 const Blogs = () => {
   return (

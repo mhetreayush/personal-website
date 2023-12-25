@@ -1,5 +1,5 @@
 "use client";
-import { experience_data } from "@/assets/data/experience";
+import { experience_data } from "@/assets/data/";
 import { Section } from "@/components/Section";
 import { TimelineCard } from "@/components/TimelineCard";
 

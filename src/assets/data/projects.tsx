@@ -1,6 +1,6 @@
 import { ProjectType } from "./types";
 
-export const projects_data: ProjectType[] = [
+const projects_data: ProjectType[] = [
   {
     name: "DoGether",
     type: "Hackathon - Self made",
@@ -165,4 +165,4 @@ export const projects_data: ProjectType[] = [
 
 const Projects = () => null;
 
-export default Projects;
+export { Projects, projects_data };

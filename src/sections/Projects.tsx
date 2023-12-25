@@ -1,6 +1,6 @@
 "use client";
 import { slugify } from "@/lib/utils/slugify";
-import { projects_data } from "@/assets/data/projects";
+import { projects_data } from "@/assets/data/";
 import { useState } from "react";
 import { Section } from "@/components/Section";
 import { AnimatedButton } from "@/components/AnimatedButton";
