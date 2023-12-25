@@ -1,11 +1,11 @@
 "use client";
-import AnimatedButton from "@/components/AnimatedButton";
-import ExternalLinkSVG from "@/components/ExternalLinkSVG";
-import Section from "@/components/Section";
-import Tags from "@/components/Tags";
 import { slugify } from "@/lib/utils/slugify";
 import { projects_data } from "@/assets/data/projects";
 import { useState } from "react";
+import { Section } from "@/components/Section";
+import { AnimatedButton } from "@/components/AnimatedButton";
+import { ExternalLinkSVG } from "@/components/ExternalLinkSVG";
+import { Tags } from "@/components/Tags";
 
 const Projects = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -80,4 +80,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export { Projects };

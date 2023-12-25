@@ -1,5 +1,5 @@
-import AnimatedButton from "@/components/AnimatedButton";
-import Section from "@/components/Section";
+import { AnimatedButton } from "@/components/AnimatedButton";
+import { Section } from "@/components/Section";
 import Image from "next/image";
 
 const About = () => {
@@ -102,4 +102,4 @@ const About = () => {
   );
 };
 
-export default About;
+export { About };

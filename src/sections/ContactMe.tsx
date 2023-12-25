@@ -1,6 +1,6 @@
-import AnimatedButton from "@/components/AnimatedButton";
-import ContactForm from "@/components/ContactForm";
-import Section from "@/components/Section";
+import { AnimatedButton } from "@/components/AnimatedButton";
+import { ContactForm } from "@/components/ContactForm";
+import { Section } from "@/components/Section";
 
 const ContactMe = () => {
   return (
@@ -36,4 +36,4 @@ const ContactMe = () => {
   );
 };
 
-export default ContactMe;
+export { ContactMe };

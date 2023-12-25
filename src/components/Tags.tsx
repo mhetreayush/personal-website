@@ -1,4 +1,4 @@
-import AnimatedButton from "./AnimatedButton";
+import { AnimatedButton } from "./AnimatedButton";
 const colors = [
   "bg-blue-300",
   "bg-green-300",
@@ -30,4 +30,4 @@ const Tags = ({ tags, parentID }: TagsProps) => {
   ));
 };
 
-export default Tags;
+export { Tags };

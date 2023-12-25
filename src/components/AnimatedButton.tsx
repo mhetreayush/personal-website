@@ -32,4 +32,4 @@ const AnimatedButton = ({
   );
 };
 
-export default AnimatedButton;
+export { AnimatedButton };

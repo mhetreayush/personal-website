@@ -7,7 +7,7 @@ import {
   Blogs,
   ContactMe,
   Footer,
-} from "@/sections/Sections";
+} from "@/sections";
 
 export default async function Home() {
   return (

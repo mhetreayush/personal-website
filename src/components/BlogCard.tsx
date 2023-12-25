@@ -1,7 +1,7 @@
 import Image from "next/image";
-import AnimatedButton from "./AnimatedButton";
-import ExternalLinkSVG from "./ExternalLinkSVG";
-import Tags from "./Tags";
+import { AnimatedButton } from "./AnimatedButton";
+import { ExternalLinkSVG } from "./ExternalLinkSVG";
+import { Tags } from "./Tags";
 import { slugify } from "@/lib/utils/slugify";
 
 function parseDate(input: string) {
@@ -82,4 +82,4 @@ const BlogCard = ({
   );
 };
 
-export default BlogCard;
+export { BlogCard };

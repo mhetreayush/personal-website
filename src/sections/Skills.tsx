@@ -1,5 +1,5 @@
-import AnimatedButton from "@/components/AnimatedButton";
-import Section from "@/components/Section";
+import { AnimatedButton } from "@/components/AnimatedButton";
+import { Section } from "@/components/Section";
 import { slugify } from "@/lib/utils/slugify";
 import Image from "next/image";
 
@@ -49,4 +49,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export { Skills };

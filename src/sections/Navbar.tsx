@@ -1,6 +1,6 @@
 "use client";
 
-import AnimatedButton from "@/components/AnimatedButton";
+import { AnimatedButton } from "@/components/AnimatedButton";
 import { slugify } from "@/lib/utils/slugify";
 import useNavLinkStore from "@/store/store";
 import Image from "next/image";
@@ -128,4 +128,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export { Navbar };

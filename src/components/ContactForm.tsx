@@ -1,7 +1,7 @@
 "use client";
 
 import { useForm } from "react-hook-form";
-import AnimatedButton from "./AnimatedButton";
+import { AnimatedButton } from "./AnimatedButton";
 import emailjs from "@emailjs/browser";
 import { useEffect, useState } from "react";
 
@@ -206,4 +206,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export { ContactForm };

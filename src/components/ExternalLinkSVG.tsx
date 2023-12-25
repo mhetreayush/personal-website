@@ -34,4 +34,4 @@ const ExternalLinkSVG = ({
   );
 };
 
-export default ExternalLinkSVG;
+export { ExternalLinkSVG };

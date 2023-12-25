@@ -1,7 +1,7 @@
 "use client";
 import { experience_data } from "@/assets/data/experience";
-import Section from "@/components/Section";
-import TimelineCard from "@/components/TimelineCard";
+import { Section } from "@/components/Section";
+import { TimelineCard } from "@/components/TimelineCard";
 
 import { VerticalTimeline } from "react-vertical-timeline-component";
 
@@ -19,4 +19,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export { Experience };
