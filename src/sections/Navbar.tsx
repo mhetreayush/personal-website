@@ -12,7 +12,7 @@ const linksArray = [
   "Skills",
   "Projects",
   "Experience",
-  "Blogs",
+  // "Blogs",
   "Contact Me",
 ];
 
