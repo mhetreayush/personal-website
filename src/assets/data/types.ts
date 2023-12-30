@@ -5,6 +5,7 @@ export type BlogType = {
   about: JSX.Element;
   date: string;
   tags: string[];
+  hidden?: boolean;
 };
 
 export type ProjectType = {

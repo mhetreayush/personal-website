@@ -6,9 +6,11 @@ const Blogs = () => {
   return (
     <Section title="Blogs">
       <div className="flex flex-col gap-y-6">
-        {blogs_data.map((blog, idx) => (
-          <BlogCard key={idx} {...blog} parentID={idx} />
-        ))}
+        {blogs_data
+          .filter((blog) => !blog.hidden)
+          .map((blog, idx) => (
+            <BlogCard key={idx} {...blog} parentID={idx} />
+          ))}
       </div>
     </Section>
   );
