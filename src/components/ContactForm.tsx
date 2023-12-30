@@ -50,8 +50,10 @@ const ErrorToast = () => {
 };
 
 const ContactForm = () => {
-  const [sentState, setSentState] = useState("idle"); // ["idle", "sending", "sent"]
-  const [showError, setShowError] = useState(false);
+  const [sentState, setSentState] = useState<"idle" | "sending" | "sent">(
+    "idle"
+  );
+  const [showError, setShowError] = useState<boolean>(false);
   const {
     register,
     handleSubmit,
@@ -64,6 +66,7 @@ const ContactForm = () => {
       message: "",
     },
   });
+
   const toggleError = () => {
     setSentState("idle");
     setShowError(true);
@@ -75,14 +78,14 @@ const ContactForm = () => {
     try {
       setSentState("sending");
       const res = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE as string,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE as string,
+        (process.env.NEXT_PUBLIC_EMAILJS_SERVICE ?? "") as string,
+        (process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE ?? "") as string,
         {
           from_name: data.name.trim(),
           message: data.message.trim(),
           from_email: data.email.trim(),
         },
-        process.env.NEXT_PUBLIC_EMAILJS_ID
+        process.env.NEXT_PUBLIC_EMAILJS_ID ?? ""
       );
       if (res.status == 200) {
         setSentState("sent");
