@@ -3,19 +3,7 @@ import { AnimatedButton } from "./AnimatedButton";
 import { ExternalLinkSVG } from "./ExternalLinkSVG";
 import { Tags } from "./Tags";
 import { slugify } from "@/lib/utils/slugify";
-
-function parseDate(input: string) {
-  const [day, month, year] = input.split("-");
-  return new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
-}
-
-const daysAgo = (date: string) => {
-  const currentDate = new Date();
-  const inputDate = parseDate(date);
-  const timeDifference = currentDate.getTime() - inputDate.getTime();
-  const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-  return daysDifference;
-};
+import { PostedAgo } from "./PostedAgo";
 
 type BlogCardProps = {
   title: string;
@@ -68,9 +56,7 @@ const BlogCard = ({
                 />
               </div>
             </div>
-            <p className="italic text-gray-800">
-              Posted {daysAgo(date)} days ago.
-            </p>
+            <PostedAgo date={date} />
             {about}
           </div>
           <div className="flex w-full gap-4 flex-wrap">
