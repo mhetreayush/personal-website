@@ -1,6 +1,7 @@
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { UseFormReset } from "react-hook-form";
+import { ContactFormFieldsTypes } from "../types";
 
 const useSubmitContactForm = () => {
   const [sentState, setSentState] = useState<"idle" | "sending" | "sent">(
@@ -20,11 +21,7 @@ const useSubmitContactForm = () => {
     formData,
     resetForm,
   }: {
-    resetForm: UseFormReset<{
-      name: string;
-      email: string;
-      message: string;
-    }>;
+    resetForm: UseFormReset<ContactFormFieldsTypes>;
     formData: {
       name: string;
       email: string;

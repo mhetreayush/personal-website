@@ -1,14 +1,11 @@
 import { AnimatedButton } from "@/components/AnimatedButton";
 import { UseFormRegister } from "react-hook-form";
+import { ContactFormFieldsTypes } from "../types";
 
 const ContactForm = ({
   register,
 }: {
-  register: UseFormRegister<{
-    email: string;
-    name: string;
-    message: string;
-  }>;
+  register: UseFormRegister<ContactFormFieldsTypes>;
 }) => {
   return (
     <>

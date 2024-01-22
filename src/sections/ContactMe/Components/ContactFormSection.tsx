@@ -3,8 +3,8 @@
 import { useForm } from "react-hook-form";
 import { AnimatedButton } from "@/components/AnimatedButton/";
 import { IdleButtonState, SentButtonState } from "@/components/AllIcons";
-import { ErrorToast } from "./ErrorToast";
 import { useSubmitContactForm } from "../hooks/useSubmitContactForm";
+import { ErrorToast } from "./ErrorToast";
 import { ContactForm } from "./ContactForm";
 
 const ContactFormSection = () => {

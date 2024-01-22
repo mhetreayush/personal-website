@@ -1,5 +1,5 @@
 import { Section } from "@/components/Section";
-import { ContactFormWrapper, ContactFormSection } from "./Components";
+import { ContactFormWrapper, ContactFormSection } from "./components";
 
 const ContactMe = () => {
   return (
