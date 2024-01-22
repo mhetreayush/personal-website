@@ -1,8 +1,7 @@
 "use client";
 
+import { useSectionWithIntersectionObserver } from "@/hooks/useSectionWithIntersectionObserver";
 import { slugify } from "@/lib/utils/slugify";
-import useNavLinkStore from "@/store/store";
-import { useEffect, useRef } from "react";
 
 type SectionProps = {
   children: React.ReactNode;
@@ -17,30 +16,10 @@ const Section = ({
   className,
   threshold,
 }: SectionProps) => {
-  const setActive = useNavLinkStore((state) => state.setActive);
-  const sectionRef = useRef(null);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setActive(slugify(title));
-        }
-      },
-      {
-        threshold: threshold || 0.5,
-      }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-    return () => {
-      if (sectionRef.current) {
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, [setActive, threshold, title]);
+  const { sectionRef } = useSectionWithIntersectionObserver({
+    threshold,
+    title,
+  });
   return (
     <div
       className={`relative  ${className} offset`}

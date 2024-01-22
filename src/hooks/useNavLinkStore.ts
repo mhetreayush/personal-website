@@ -10,4 +10,4 @@ const useNavLinkStore = create<NavLinkStore>((set) => ({
   setActive: (link: string) => set({ active: link }),
 }));
 
-export default useNavLinkStore;
+export { useNavLinkStore };

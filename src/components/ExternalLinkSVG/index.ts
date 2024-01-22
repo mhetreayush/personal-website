@@ -1,0 +1,1 @@
+export { ExternalLinkSVG } from "./ExternalLinkSVG";

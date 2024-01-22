@@ -1,4 +1,4 @@
-import { AnimatedButton } from "./AnimatedButton";
+import { AnimatedButton } from "../AnimatedButton/AnimatedButton";
 const colors = [
   "bg-blue-300",
   "bg-green-300",

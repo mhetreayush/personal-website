@@ -1,5 +1,4 @@
-import React from "react";
-import { ExperienceType } from "./types";
+import { ExperienceType } from "@/lib/types";
 
 const experience_data: ExperienceType[] = [
   {

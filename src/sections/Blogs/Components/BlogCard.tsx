@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { AnimatedButton } from "./AnimatedButton";
-import { ExternalLinkSVG } from "./ExternalLinkSVG";
-import { Tags } from "./Tags";
+import { AnimatedButton } from "../../../components/AnimatedButton/AnimatedButton";
+import { ExternalLinkSVG } from "../../../components/ExternalLinkSVG/ExternalLinkSVG";
+import { Tags } from "../../../components/Tags/Tags";
 import { slugify } from "@/lib/utils/slugify";
 import { PostedAgo } from "./PostedAgo";
 

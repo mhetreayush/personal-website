@@ -1,4 +1,4 @@
-import { BlogType } from "./types";
+import { BlogType } from "@/lib/types";
 
 const blogs_data: BlogType[] = [
   {

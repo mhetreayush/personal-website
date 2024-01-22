@@ -1,8 +1,8 @@
 "use client";
 
 import { AnimatedButton } from "@/components/AnimatedButton";
+import { useNavLinkStore } from "@/hooks/useNavLinkStore";
 import { slugify } from "@/lib/utils/slugify";
-import useNavLinkStore from "@/store/store";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";

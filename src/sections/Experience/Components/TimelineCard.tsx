@@ -1,8 +1,8 @@
 import { slugify } from "@/lib/utils/slugify";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
-import { AnimatedButton } from "./AnimatedButton";
+import { AnimatedButton } from "../../../components/AnimatedButton/AnimatedButton";
 import Image from "next/image";
-import { ExternalLinkSVG } from "./ExternalLinkSVG";
+import { ExternalLinkSVG } from "../../../components/ExternalLinkSVG/ExternalLinkSVG";
 
 type TimelineCardProps = {
   date: string;
