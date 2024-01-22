@@ -3,7 +3,7 @@ import { AnimatedButton } from "@//components/AnimatedButton";
 import { ExternalLinkSVG } from "@/components/ExternalLinkSVG";
 import { Tags } from "@/components/Tags/Tags";
 import { slugify } from "@/lib/utils/slugify";
-import { BlogCardProps } from "./types";
+import { BlogCardProps } from "../types";
 import { PostedAgo } from "./PostedAgo";
 
 const BlogCard = ({
