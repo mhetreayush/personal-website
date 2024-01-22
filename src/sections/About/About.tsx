@@ -2,6 +2,7 @@ import { ExternalLinkIcon } from "@/components/AllIcons";
 import { AnimatedButton } from "@/components/AnimatedButton";
 import { Section } from "@/components/Section";
 import Image from "next/image";
+import { WhatAmILookingFor, WhatDoIDo, WhoAmI } from "./components";
 
 const About = () => {
   return (
@@ -16,45 +17,9 @@ const About = () => {
             }}
           >
             <div className="max-h-[50vh] md:max-h-full p-2 md:p-4 md:text-justify text-lg flex flex-col gap-y-2 justify-between overflow-y-auto relative overflow-clip pb-6">
-              <div>
-                <h1 className="font-semibold underline underline-offset-8 mb-1">
-                  Who am I?
-                </h1>
-                <p>
-                  I am a 3rd year 👨🏼‍🎓 student pursuing B.Tech in 💻 Computer
-                  Science and Engineering from 🏫 Vellore Institute of
-                  Technology, Vellore. I am a passionate 👨🏼‍💻 developer and a tech
-                  enthusiast. I love to ✨ explore new technologies and leverage
-                  them to solve real-life problems. 🕸 I am into Web Development
-                  for almost 2 years and currently working on my Data Structures
-                  and Algorithms. I also keep an understanding of web
-                  fundamentals, security issues and SEO.
-                </p>
-              </div>
-              <div>
-                <h1 className="font-semibold underline underline-offset-8 mb-1">
-                  What do I do?
-                </h1>
-                <p>
-                  I am a Full Stack Web Developer strong in frontend
-                  development. I love building beautiful and responsive
-                  websites.
-                </p>
-              </div>
-              <div>
-                <h1 className="font-semibold underline underline-offset-8 mb-1">
-                  What am I looking for?
-                </h1>
-                <p>
-                  I am looking for a Software Developer Internships in a
-                  company/startup where I can learn and grow as a developer and
-                  contribute to the company&apos;s growth. My strong area is
-                  full stack web development and I am currently working on my
-                  Data Structures and Algorithms. But I am also interested in
-                  system design so I am continuously learning about different
-                  system design patterns, architectures and scalability.
-                </p>
-              </div>
+              <WhoAmI />
+              <WhatDoIDo />
+              <WhatAmILookingFor />
             </div>
           </AnimatedButton>
           <AnimatedButton
