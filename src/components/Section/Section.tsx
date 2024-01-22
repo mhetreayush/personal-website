@@ -1,6 +1,6 @@
 "use client";
 
-import { useSectionWithIntersectionObserver } from "@/hooks/useSectionWithIntersectionObserver";
+import { useSectionWithIntersectionObserver } from "@/lib/hooks/useSectionWithIntersectionObserver";
 import { slugify } from "@/lib/utils/slugify";
 import { SectionProps } from "./types";
 
