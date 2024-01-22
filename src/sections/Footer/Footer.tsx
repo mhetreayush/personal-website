@@ -1,33 +1,5 @@
-import { slugify } from "@/lib/utils/slugify";
-import Image from "next/image";
-
-type LinkType = {
-  label: string;
-  url: string;
-};
-
-const links: LinkType[] = [
-  {
-    label: "Github",
-    url: "https://github.com/mhetreayush",
-  },
-  {
-    label: "StackOverflow",
-    url: "https://stackoverflow.com/users/22811320/ayush-mhetre",
-  },
-  {
-    label: "Medium",
-    url: "https://medium.com/@mhetreayush1719",
-  },
-  {
-    label: "LinkedIn",
-    url: "https://www.linkedin.com/in/ayush-mhetre-662709227/",
-  },
-  {
-    label: "Phone",
-    url: "tel:+917020860691",
-  },
-];
+import { EmailEnvelopeIcon } from "@/components/AllIcons";
+import { Links } from "./components/Links";
 
 const Footer = () => {
   return (
@@ -41,40 +13,13 @@ const Footer = () => {
             className="flex items-center gap-x-2 mt-2"
           >
             <span className="inline-block">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                />
-              </svg>
+              <EmailEnvelopeIcon />
             </span>
             mhetreayush1719@gmail.com
           </a>
         </div>
         <div className="flex gap-x-4 items-center justify-center">
-          {links.map((link, idx) => (
-            <a
-              key={idx}
-              href={link.url}
-              target="_blank"
-              aria-label={link.label}
-            >
-              <Image
-                src={`/icons/${slugify(link.label)}.svg`}
-                width={36}
-                height={36}
-                alt={link.label}
-              />
-            </a>
-          ))}
+          <Links />
         </div>
       </div>
     </footer>
