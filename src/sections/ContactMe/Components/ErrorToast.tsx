@@ -1,5 +1,5 @@
-import { ErrorIcon } from "@/components/AllIcons";
-import { AnimatedButton } from "@/components/AnimatedButton";
+import { ErrorIcon } from "@/Components/AllIcons";
+import { AnimatedButton } from "@/Components/AnimatedButton";
 import { useErrorToast } from "../hooks/useErrorToast";
 
 const ErrorToast = () => {

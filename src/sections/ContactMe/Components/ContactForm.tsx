@@ -1,4 +1,4 @@
-import { AnimatedButton } from "@/components/AnimatedButton";
+import { AnimatedButton } from "@/Components/AnimatedButton";
 import { UseFormRegister } from "react-hook-form";
 import { ContactFormFieldsTypes } from "../types";
 

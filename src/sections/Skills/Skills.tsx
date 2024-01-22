@@ -1,4 +1,4 @@
-import { Section } from "@/components/Section";
+import { Section } from "@/Components/Section";
 import { SkillsCard } from "./components";
 import { skills_data } from "@/assets/data";
 

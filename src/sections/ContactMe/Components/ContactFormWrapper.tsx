@@ -1,4 +1,4 @@
-import { AnimatedButton } from "@/components/AnimatedButton";
+import { AnimatedButton } from "@/Components/AnimatedButton";
 import { ContactFormWindowCircle } from "./ContactFormWindowCircle";
 
 const ContactFormWrapper = ({ children }: { children: JSX.Element }) => {

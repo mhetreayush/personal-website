@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatedButton } from "@/components/AnimatedButton";
+import { AnimatedButton } from "@/Components/AnimatedButton";
 import { useNavLinkStore } from "@/lib/hooks/useNavLinkStore";
 import Image from "next/image";
 import { useState } from "react";

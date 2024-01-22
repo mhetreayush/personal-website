@@ -1,4 +1,4 @@
-import { EmailEnvelopeIcon } from "@/components/AllIcons";
+import { EmailEnvelopeIcon } from "@/Components/AllIcons";
 import { Links } from "./components/Links";
 
 const Footer = () => {

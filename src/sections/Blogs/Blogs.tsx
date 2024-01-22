@@ -1,5 +1,5 @@
 import { BlogCard } from "./components";
-import { Section } from "@/components/Section";
+import { Section } from "@/Components/Section";
 import { blogs_data } from "@/assets/data";
 
 const Blogs = () => {

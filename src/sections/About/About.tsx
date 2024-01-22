@@ -1,6 +1,6 @@
-import { ExternalLinkIcon } from "@/components/AllIcons";
-import { AnimatedButton } from "@/components/AnimatedButton";
-import { Section } from "@/components/Section";
+import { ExternalLinkIcon } from "@/Components/AllIcons";
+import { AnimatedButton } from "@/Components/AnimatedButton";
+import { Section } from "@/Components/Section";
 import Image from "next/image";
 import { WhatAmILookingFor, WhatDoIDo, WhoAmI } from "./components";
 
