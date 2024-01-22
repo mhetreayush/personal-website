@@ -1,6 +1,6 @@
-import { Section } from "@/Components/Section";
-import { SkillsCard } from "./_components";
 import { skills_data } from "@/assets/data";
+import { Section } from "@/components/Section";
+import { SkillsCard } from "./components";
 
 const Skills = () => {
   return (

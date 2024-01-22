@@ -1,4 +1,4 @@
-import { AnimatedButton } from "@/Components/AnimatedButton";
+import { AnimatedButton } from "@/components/AnimatedButton";
 import Link from "next/link";
 import { LinksProps } from "./types";
 import { slugify } from "@/lib/utils/slugify";

@@ -1,8 +1,8 @@
 "use client";
-import { SourceCodeIcon } from "@/Components/AllIcons";
-import { AnimatedButton } from "@/Components/AnimatedButton";
-import { ExternalLinkSVG } from "@/Components/ExternalLinkSVG";
-import { Tags } from "@/Components/Tags";
+import { SourceCodeIcon } from "@/components/AllIcons";
+import { AnimatedButton } from "@/components/AnimatedButton";
+import { ExternalLinkSVG } from "@/components/ExternalLinkSVG";
+import { Tags } from "@/components/Tags";
 import { slugify } from "@/lib/utils/slugify";
 import { useState } from "react";
 import { ProjectCardProps } from "../types";

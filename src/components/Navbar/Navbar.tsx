@@ -1,10 +1,10 @@
 "use client";
 
-import { AnimatedButton } from "@/Components/AnimatedButton";
+import { AnimatedButton } from "@/components/AnimatedButton";
 import { useNavLinkStore } from "@/lib/hooks/useNavLinkStore";
 import Image from "next/image";
 import { useState } from "react";
-import { Links } from "./_components/Links";
+import { Links } from "./components/Links";
 import { CrossIcon, HamburgerIcon } from "../AllIcons";
 
 const Navbar = () => {

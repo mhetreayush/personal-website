@@ -1,4 +1,4 @@
-import { AnimatedButton } from "@/Components/AnimatedButton";
+import { AnimatedButton } from "@/components/AnimatedButton";
 import Image from "next/image";
 import { SkillType } from "../types";
 import { slugify } from "@/lib/utils/slugify";
