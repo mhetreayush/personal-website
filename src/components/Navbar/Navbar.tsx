@@ -5,7 +5,7 @@ import { useNavLinkStore } from "@/lib/hooks/useNavLinkStore";
 import Image from "next/image";
 import { useState } from "react";
 import { Links } from "./components/Links";
-import { CrossIcon, HambugerIcon } from "../AllIcons";
+import { CrossIcon, HamburgerIcon } from "../AllIcons";
 
 const Navbar = () => {
   const active = useNavLinkStore((state) => state.active);
@@ -36,7 +36,7 @@ const Navbar = () => {
               onClick={() => setMobileNav(true)}
               aria-label="Open Mobile Nav"
             >
-              <HambugerIcon />
+              <HamburgerIcon />
             </button>
           </AnimatedButton>
           <div

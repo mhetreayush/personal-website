@@ -1,6 +1,6 @@
 import { projects_data } from "@/assets/data/";
 import { Section } from "@/components/Section";
-import { ProjectCard } from "./Components";
+import { ProjectCard } from "./components";
 
 const Projects = () => {
   return (
