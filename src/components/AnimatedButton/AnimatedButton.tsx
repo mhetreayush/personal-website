@@ -1,12 +1,4 @@
-type AnimatedButtonProps = {
-  children: React.ReactNode;
-  rounded: string;
-  className?: {
-    body?: string;
-    child?: string;
-  };
-  active?: boolean;
-};
+import { AnimatedButtonProps } from "./types";
 
 const AnimatedButton = ({
   children,

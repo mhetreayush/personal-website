@@ -1,4 +1,5 @@
 import { AnimatedButton } from "../AnimatedButton/AnimatedButton";
+import { TagsProps } from "./types";
 const colors = [
   "bg-blue-300",
   "bg-green-300",
@@ -6,10 +7,6 @@ const colors = [
   "bg-orange-300",
 ];
 
-type TagsProps = {
-  tags: string[];
-  parentID: number | string;
-};
 const Tags = ({ tags, parentID }: TagsProps) => {
   return tags.map((tag, idx) => (
     <AnimatedButton

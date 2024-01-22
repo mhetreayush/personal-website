@@ -2,49 +2,10 @@
 
 import { AnimatedButton } from "@/components/AnimatedButton";
 import { useNavLinkStore } from "@/hooks/useNavLinkStore";
-import { slugify } from "@/lib/utils/slugify";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
-
-const linksArray = [
-  "About Me",
-  "Skills",
-  "Projects",
-  "Experience",
-  "Blogs",
-  "Contact Me",
-];
-
-type LinksProps = {
-  active: string;
-  setMobileNav?: (value: boolean) => void;
-};
-
-const Links = ({ active, setMobileNav = () => {} }: LinksProps) =>
-  linksArray.map((link, index) => {
-    const newLink = slugify(link);
-    return (
-      <Link
-        href={`#${newLink}`}
-        key={index}
-        onClick={() => setMobileNav(false)}
-        aria-label={link}
-      >
-        <AnimatedButton
-          rounded="rounded-md"
-          active={newLink == active}
-          className={{
-            child: `${
-              newLink == active ? "bg-purple-400 text-white" : "bg-white"
-            } font-semibold text-lg`,
-          }}
-        >
-          <p className="rounded-md p-2">{link}</p>
-        </AnimatedButton>
-      </Link>
-    );
-  });
+import { Links } from "./components/Links";
+import { CrossIcon, HambugerIcon } from "../AllIcons";
 
 const Navbar = () => {
   const active = useNavLinkStore((state) => state.active);
@@ -75,15 +36,7 @@ const Navbar = () => {
               onClick={() => setMobileNav(true)}
               aria-label="Open Mobile Nav"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-black"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
+              <HambugerIcon />
             </button>
           </AnimatedButton>
           <div
@@ -103,20 +56,7 @@ const Navbar = () => {
                   onClick={() => setMobileNav(false)}
                   aria-label="Close Mobile Nav"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
+                  <CrossIcon />
                 </button>
               </AnimatedButton>
               <Links active={active} setMobileNav={setMobileNav} />

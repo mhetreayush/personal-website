@@ -2,13 +2,7 @@
 
 import { useSectionWithIntersectionObserver } from "@/hooks/useSectionWithIntersectionObserver";
 import { slugify } from "@/lib/utils/slugify";
-
-type SectionProps = {
-  children: React.ReactNode;
-  title?: string;
-  className?: string;
-  threshold?: number;
-};
+import { SectionProps } from "./types";
 
 const Section = ({
   children,

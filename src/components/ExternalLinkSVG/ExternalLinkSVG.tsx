@@ -1,11 +1,5 @@
 import { ExternalLinkIcon } from "../AllIcons";
-
-type ExternalLinkSVGProps = {
-  link: string;
-  text?: string;
-  className?: string;
-  name?: string;
-};
+import { ExternalLinkSVGProps } from "./types";
 
 const ExternalLinkSVG = ({
   link,
