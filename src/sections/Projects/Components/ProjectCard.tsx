@@ -1,19 +1,13 @@
 "use client";
-import { ProjectType } from "@/lib/types";
 import { SourceCodeIcon } from "@/components/AllIcons";
 import { AnimatedButton } from "@/components/AnimatedButton";
 import { ExternalLinkSVG } from "@/components/ExternalLinkSVG";
 import { Tags } from "@/components/Tags";
 import { slugify } from "@/lib/utils/slugify";
 import { useState } from "react";
+import { ProjectCardProps } from "../types";
 
-const ProjectCard = ({
-  project,
-  index,
-}: {
-  project: ProjectType;
-  index: number;
-}) => {
+const ProjectCard = ({ project, index }: ProjectCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
   const [hoveredID, setHoveredID] = useState<null | number>(null);
   return (
