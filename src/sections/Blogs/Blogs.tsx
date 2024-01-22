@@ -1,4 +1,4 @@
-import { BlogCard } from "./components";
+import { BlogCard } from "./_components";
 import { Section } from "@/Components/Section";
 import { blogs_data } from "@/assets/data";
 

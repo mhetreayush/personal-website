@@ -1,7 +1,7 @@
 "use client";
 import { experience_data } from "@/assets/data/";
 import { Section } from "@/Components/Section";
-import { TimelineCard } from "./components/TimelineCard";
+import { TimelineCard } from "./_components/TimelineCard";
 
 import { VerticalTimeline } from "react-vertical-timeline-component";
 

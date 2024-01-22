@@ -2,7 +2,7 @@ import { ExternalLinkIcon } from "@/Components/AllIcons";
 import { AnimatedButton } from "@/Components/AnimatedButton";
 import { Section } from "@/Components/Section";
 import Image from "next/image";
-import { WhatAmILookingFor, WhatDoIDo, WhoAmI } from "./components";
+import { WhatAmILookingFor, WhatDoIDo, WhoAmI } from "./_components";
 
 const About = () => {
   return (
