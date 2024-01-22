@@ -1,6 +1,6 @@
 import { SkillType } from "@/sections/Skills/types";
 
-export const skills: SkillType[] = [
+export const skills_data: SkillType[] = [
   "HTML",
   "CSS",
   "JavaScript",
