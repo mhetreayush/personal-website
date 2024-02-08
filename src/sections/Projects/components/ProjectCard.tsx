@@ -1,27 +1,28 @@
-"use client";
 import { SourceCodeIcon } from "@/components/AllIcons";
 import { AnimatedButton } from "@/components/AnimatedButton";
 import { ExternalLinkSVG } from "@/components/ExternalLinkSVG";
 import { Tags } from "@/components/Tags";
 import { slugify } from "@/lib/utils/slugify";
-import { useState } from "react";
 import { ProjectCardProps } from "../types";
 
-const ProjectCard = ({ project, index }: ProjectCardProps) => {
-  const [isHovered, setIsHovered] = useState(false);
-  const [hoveredID, setHoveredID] = useState<null | number>(null);
+const ProjectCard = ({
+  project,
+  index,
+  hoveredID,
+  setHoveredID,
+}: ProjectCardProps) => {
   return (
     <div
       className={`break-inside-avoid pb-2 w-full blur-0 transition-all duration-200 ease-in-out 
-            ${isHovered && hoveredID != index && "!blur-sm"}
+            ${
+              typeof hoveredID === "number" && hoveredID !== index && "!blur-sm"
+            }
             `}
       key={index}
       onMouseEnter={() => {
-        setIsHovered(true);
         setHoveredID(index);
       }}
       onMouseLeave={() => {
-        setIsHovered(false);
         setHoveredID(null);
       }}
     >
