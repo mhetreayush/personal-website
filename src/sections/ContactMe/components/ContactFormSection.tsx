@@ -32,7 +32,7 @@ const ContactFormSection = () => {
       <AnimatedButton
         rounded="rounded-md"
         className={{
-          body: "bg-white md:w-fit w-full text-center border-0 ",
+          body: "bg-white w-fit text-center border-0 ",
           child: "bg-white rounded-md font-semibold text-xl",
         }}
       >
