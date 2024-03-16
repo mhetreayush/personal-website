@@ -3,6 +3,9 @@ import { Analytics } from "@vercel/analytics/react";
 export const metadata = {
   title: "Ayush Mhetre",
   description: "Ayush Mhetre's personal website",
+  openGraph: {
+    images: "/opengraph-image.jpeg",
+  },
 };
 import "react-vertical-timeline-component/style.min.css";
 export default function RootLayout({
