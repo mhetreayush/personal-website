@@ -1,9 +1,19 @@
 import { slugify } from "@/lib/utils/slugify";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import { AnimatedButton } from "@/components/AnimatedButton";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { ExternalLinkSVG } from "@/components/ExternalLinkSVG";
 import { TimelineCardProps } from "../types";
+import prishapolicy from "../../../../public/logos/prishapolicy.jpg";
+import devfolio from "../../../../public/logos/devfolio.svg";
+import saltpe from "../../../../public/logos/saltpe.svg";
+const companyLogos: {
+  [key: string]: StaticImageData;
+} = {
+  prishapolicy,
+  devfolio,
+  saltpe,
+};
 
 const TimelineCard = ({
   date,
@@ -11,7 +21,6 @@ const TimelineCard = ({
   role,
   child,
   link,
-  image,
   type = "Internship",
 }: TimelineCardProps) => {
   return (
@@ -42,7 +51,7 @@ const TimelineCard = ({
         >
           <Image
             alt={`${company} logo`}
-            src={`/logos/${image || slugify(company) + ".svg"}`}
+            src={companyLogos[slugify(company)]}
             width={25}
             height={25}
             className="object-contain "

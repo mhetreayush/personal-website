@@ -1,10 +1,18 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { AnimatedButton } from "@/components/AnimatedButton";
 import { ExternalLinkSVG } from "@/components/ExternalLinkSVG";
 import { Tags } from "@/components/Tags/Tags";
 import { slugify } from "@/lib/utils/slugify";
 import { BlogCardProps } from "../types";
 import { PostedAgo } from "./PostedAgo";
+import accordionsCover from "../../../../public/blog-assets/accordions/cover.png";
+import discriminatedUnions from "../../../../public/blog-assets/discriminated_unions/cover.png";
+const blogImages: {
+  [key: string]: StaticImageData;
+} = {
+  accordions: accordionsCover,
+  discriminated_unions: discriminatedUnions,
+};
 
 const BlogCard = ({
   title,
@@ -25,7 +33,7 @@ const BlogCard = ({
             aria-label={"Blog: " + slugify(title, "-")}
           >
             <Image
-              src={`/blog-assets/${folder}/cover.png`}
+              src={blogImages[folder]}
               alt={title}
               width={500}
               height={300}

@@ -3,7 +3,7 @@ import { AnimatedButton } from "@/components/AnimatedButton";
 import { Section } from "@/components/Section";
 import Image from "next/image";
 import { WhatAmILookingFor, WhatDoIDo, WhoAmI } from "./components";
-
+import heroIllustration from "../../../public/hero-ill.svg";
 const About = () => {
   return (
     <Section title="About Me" className="overflow-clip">
@@ -44,7 +44,7 @@ const About = () => {
 
         <div className=" h-full w-full justify-center items-center hidden md:flex animate-illustrationBounce">
           <Image
-            src="/hero-ill.svg"
+            src={heroIllustration}
             width={500}
             height={500}
             alt="Ayush Mhetre"

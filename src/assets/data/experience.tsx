@@ -33,7 +33,6 @@ const experience_data: ExperienceType[] = [
     date: "Sept 2022 - Dec 2022",
     role: "Frontend Web Developer",
     link: "https://prishapolicy.com",
-    image: "prishapolicy.jpg",
     child: (
       <ul>
         <li>Worked on a monorepo.</li>

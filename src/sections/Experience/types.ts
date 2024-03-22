@@ -4,6 +4,5 @@ export type TimelineCardProps = {
   role: string;
   child: React.ReactNode;
   link: string;
-  image?: string;
   type?: string;
 };
