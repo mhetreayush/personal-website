@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Ayush Mhetre",
@@ -37,6 +38,7 @@ export default function RootLayout({
       <meta name="theme-color" content="#F5EFE7" />
       <body>{children}</body>
       <Analytics />
+      <SpeedInsights />
     </html>
   );
 }
