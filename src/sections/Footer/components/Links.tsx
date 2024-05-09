@@ -17,7 +17,7 @@ const links: LinkType[] = [
   },
   {
     label: "LinkedIn",
-    url: "https://www.linkedin.com/in/ayush-mhetre-662709227/",
+    url: "https://www.linkedin.com/in/ayush-mhetre",
   },
   {
     label: "Phone",
