@@ -1,13 +1,13 @@
-import { BlogCard } from "./components";
-import { Section } from "@/components/Section";
-import { blogs_data } from "@/assets/data";
+import { BlogCard } from './components';
+import { Section } from '@/components/Section';
+import { blogs_data } from '@/assets/data';
 
 const Blogs = () => {
   return (
-    <Section title="Blogs">
+    <Section title="Blogs" threshold={0.75}>
       <div className="flex flex-col gap-y-6">
         {blogs_data
-          .filter((blog) => !blog.hidden)
+          .filter(blog => !blog.hidden)
           .map((blog, idx) => (
             <BlogCard key={idx} {...blog} parentID={idx} />
           ))}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useDaysAgoFromDate } from "../hooks/useGetDaysAgoFromDate";
+import { useDaysAgoFromDate } from "../../../hooks/useGetDaysAgoFromDate";
 
 const PostedAgo = ({ date }: { date: string }) => {
   const { daysAgo } = useDaysAgoFromDate(date);
