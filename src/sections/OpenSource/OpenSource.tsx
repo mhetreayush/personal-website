@@ -17,11 +17,7 @@ export const OpenSource = async () => {
 
   const fetchPRStats = async ({ owner, repo, pull_number }: { owner: string; repo: string; pull_number: number }) => {
     try {
-      const response = await octokit.request('GET /repos/{owner}/{repo}/pulls/{pull_number}', {
-        owner: 'calcom',
-        repo: 'cal.com',
-        pull_number: 14910,
-      });
+      const response = await octokit.request(`GET /repos/${owner}/${repo}/pulls/${pull_number}`);
       return response;
     } catch (error) {
       return [];
@@ -35,6 +31,7 @@ export const OpenSource = async () => {
       <div className="flex flex-col md:grid grid-cols-2 gap-4">
         {prStats.map((pr, idx) => (
           <GithubPRCard
+            key={idx}
             merged={pr.data.merged}
             title={pr.data.title}
             url={`https://github.com/${pr.data.base.repo.full_name}/pull/${pr.data.number}`}
