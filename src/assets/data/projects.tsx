@@ -1,6 +1,23 @@
 import { ProjectType } from "@/lib/types";
+import Link from "next/link";
 
 const projects_data: ProjectType[] = [
+  {
+    name: "DX Labs",
+    type: "Hackathon - Self made",
+    demo: "https://web-frontend-blush.vercel.app/",
+    description: (<p>
+      <Link
+      href={"https://github.com/dxlabs-yantra-2024/web-frontend/blob/main/README.md"}
+      target="_blank"
+      className="inline-block text-blue-500 hover:underline underline-offset-2 w-fit"
+      >
+        Click here
+      </Link> for complete project details.
+    </p>),
+    sourceCode: "https://github.com/dxlabs-yantra-2024/web-frontend",
+    tags: ["NextJS", "TailwindCSS", "Healthcare", "Whisper_AI", "OpenAI_API"],
+  },
   {
     name: "DoGether",
     type: "Hackathon - Self made",
