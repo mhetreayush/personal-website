@@ -1,19 +1,29 @@
-import { ExternalLinkIcon } from "@/components/AllIcons";
-import { AnimatedButton } from "@/components/AnimatedButton";
-import { Section } from "@/components/Section";
-import Image from "next/image";
-import { WhatAmILookingFor, WhatDoIDo, WhoAmI } from "./components";
-import heroIllustration from "../../../public/hero-ill.svg";
+import { ExternalLinkIcon } from '@/components/AllIcons';
+import { AnimatedButton } from '@/components/AnimatedButton';
+import { Section } from '@/components/Section';
+import Image from 'next/image';
+import { CurrentlyLearning, WhatAmILookingFor, WhatDoIDo, WhoAmI } from './components';
+import heroIllustration from '../../../public/hero-ill.svg';
 const About = () => {
   return (
     <Section title="About Me" className="overflow-clip">
       <div className="flex flex-col-reverse gap-4 md:grid grid-cols-2 ">
         <div className="flex flex-col gap-4">
           <AnimatedButton
-            rounded={"rounded-md"}
+            rounded={'rounded-md'}
+            className={{
+              child: 'bg-white ',
+            }}
+          >
+            <div className="p-2 md:p-4">
+              <CurrentlyLearning />
+            </div>
+          </AnimatedButton>
+          <AnimatedButton
+            rounded={'rounded-md'}
             className={{
               child:
-                "bg-white relative after:block after:md:hidden after:h-7 after:bg-gradient-to-b after:from-white after:via-gray-500 after:to-black after:bottom-0 after:z-50 after:sticky after:opacity-60 after:rounded-b-md",
+                'bg-white relative after:block after:md:hidden after:h-7 after:bg-gradient-to-b after:from-white after:via-gray-500 after:to-black after:bottom-0 after:z-50 after:sticky after:opacity-60 after:rounded-b-md',
             }}
           >
             <div className="max-h-[50vh] md:max-h-full p-2 md:p-4 md:text-justify text-lg flex flex-col gap-y-2 justify-between overflow-y-auto relative overflow-clip pb-6">
@@ -23,10 +33,10 @@ const About = () => {
             </div>
           </AnimatedButton>
           <AnimatedButton
-            rounded={"rounded-full"}
+            rounded={'rounded-full'}
             className={{
-              body: "font-semibold text-center md:w-fit",
-              child: "bg-yellow-200   text-black text-2xl ",
+              body: 'font-semibold text-center md:w-fit',
+              child: 'bg-yellow-200   text-black text-2xl ',
             }}
           >
             <a
@@ -43,12 +53,7 @@ const About = () => {
         </div>
 
         <div className=" h-full w-full justify-center items-center hidden md:flex animate-illustrationBounce">
-          <Image
-            src={heroIllustration}
-            width={500}
-            height={500}
-            alt="Ayush Mhetre"
-          />
+          <Image src={heroIllustration} width={500} height={500} alt="Ayush Mhetre" />
         </div>
       </div>
     </Section>
