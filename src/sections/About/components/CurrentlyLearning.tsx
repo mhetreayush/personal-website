@@ -6,7 +6,7 @@ export const CurrentlyLearning = () => (
     </div>
     <div className="ml-2">
       <ul>
-        <li>Kubernetes</li>
+        <li>NestJS</li>
       </ul>
     </div>
   </div>
