@@ -8,6 +8,23 @@ const MERGED_PRS = [
     repo: 'cal.com',
     pull_number: 14910,
   },
+  {
+    owner: 'calcom',
+    repo: 'cal.com',
+    pull_number: 15691,
+    note: (
+      <>
+        This PR was opened by another contributor based on my PR{' '}
+        <a
+          target="_blank"
+          href="https://github.com/calcom/cal.com/pull/15592"
+          className="inline-block text-blue-500 underline underline-offset-2 w-fit font-semibold"
+        >
+          #15592
+        </a>
+      </>
+    ),
+  },
 ];
 
 export const OpenSource = async () => {
@@ -15,9 +32,22 @@ export const OpenSource = async () => {
     auth: TOKEN,
   });
 
-  const fetchPRStats = async ({ owner, repo, pull_number }: { owner: string; repo: string; pull_number: number }) => {
+  const fetchPRStats = async ({
+    owner,
+    repo,
+    pull_number,
+    note,
+  }: {
+    owner: string;
+    repo: string;
+    pull_number: number;
+    note?: React.ReactNode;
+  }) => {
     try {
       const response = await octokit.request(`GET /repos/${owner}/${repo}/pulls/${pull_number}`);
+      if (note) {
+        response.data.note = note;
+      }
       return response;
     } catch (error) {
       return [];
@@ -29,7 +59,7 @@ export const OpenSource = async () => {
   return (
     <Section title="Open Source Contributions" intersectionObserverTitle="Experience">
       <div className="flex flex-col md:grid grid-cols-2 gap-4">
-        {prStats.map((pr, idx) => (
+        {prStats.map((pr: any, idx: number) => (
           <GithubPRCard
             key={idx}
             merged={pr.data.merged}
@@ -40,6 +70,7 @@ export const OpenSource = async () => {
             repository={pr.data.base.repo.full_name}
             prNumber={pr.data.number}
             mergedAt={pr.data.merged_at}
+            note={pr.data.note}
           />
         ))}
       </div>

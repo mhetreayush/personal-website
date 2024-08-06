@@ -11,6 +11,7 @@ export const GithubPRCard = ({
   repository,
   prNumber,
   mergedAt,
+  note,
 }: {
   merged: string;
   title: string;
@@ -20,6 +21,7 @@ export const GithubPRCard = ({
   repository: string;
   prNumber: number;
   mergedAt: string;
+  note?: React.ReactNode;
 }) => {
   const { formattedDate } = useFormatDate(mergedAt);
   return (
@@ -27,10 +29,11 @@ export const GithubPRCard = ({
       <AnimatedButton
         rounded="rounded-md"
         className={{
-          child: 'bg-white',
+          body: 'h-full',
+          child: 'bg-white h-full',
         }}
       >
-        <div className="flex flex-col gap-8 p-4 rounded-md">
+        <div className="flex flex-col gap-8 p-4 rounded-md justify-between min-h-full">
           <div className="flex justify-between w-full gap-4 md:gap-20">
             <div className="flex flex-col gap-2 grow">
               <p className="text-sm text-gray-500">{repository}</p>
@@ -38,6 +41,11 @@ export const GithubPRCard = ({
                 <span className="text-gray-500 font-light">#{prNumber} </span>
                 <span className="font-bold">{title}</span>
               </p>
+              {!!note && (
+                <>
+                  <p className="text-sm text-gray-400">{note}</p>
+                </>
+              )}
             </div>
             <img
               src={userAvatarURL}
