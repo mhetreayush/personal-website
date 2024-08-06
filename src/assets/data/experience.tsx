@@ -8,7 +8,11 @@ const experience_data: ExperienceType[] = [
     link: 'https://devfolio.co/',
     child: (
       <ul>
-        <li>Worked as frontend web developer.</li>
+        <li>Added a real-time functionality to the project judging view.</li>
+        <li>Built various features from scratch.</li>
+        <li>Revamped the UI of various pages.</li>
+        <li>Worked on multiple apps.</li>
+        <li>Added and improved UI components to the design system library.</li>
       </ul>
     ),
   },
