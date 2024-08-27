@@ -19,6 +19,7 @@ import socketioImage from '../../../../public/icons/socketio.svg';
 import dockerImage from '../../../../public/icons/docker.svg';
 import travisciImage from '../../../../public/icons/travis-ci.svg';
 import awsebsImage from '../../../../public/icons/aws.svg';
+import postgressqlImage from '../../../../public/icons/postgresql.svg';
 
 const skillsLogos: {
   [key: string]: StaticImageData;
@@ -41,6 +42,7 @@ const skillsLogos: {
   awsebsImage,
   ['docker-composeImage']: dockerImage,
   travisciImage,
+  postgressqlImage,
 };
 
 export const SkillsCard = ({ skill }: { skill: SkillType }) => {

@@ -15,6 +15,7 @@ export const skills_data: SkillType[] = [
   'GraphQL',
   'MongoDB',
   'Socket.io',
+  'PostgresSQL',
   'Docker',
   'Docker-compose',
   'Travis CI',
