@@ -30,7 +30,7 @@ const StorylaneEmbed = () => {
         <iframe
           loading="lazy"
           className="sl-demo"
-          src="https://app.storylane.io/demo/x7ixrohkzrz4?embed=inline"
+          src="https://app.storylane.io/demo/sbcbg89jire3?embed=inline"
           name="sl-embed"
           allow="fullscreen"
           allowFullScreen
