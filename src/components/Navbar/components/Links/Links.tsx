@@ -7,7 +7,7 @@ const linksArray = ['About Me', 'Skills', 'Experience', 'Projects', 'Blogs', 'Co
 
 const Links = ({ active, setMobileNav = () => {} }: LinksProps) =>
   linksArray.map((link, index) => {
-    const newLink = slugify(link);
+    const newLink = slugify(link, '-');
     return (
       <Link href={`#${newLink}`} key={index} onClick={() => setMobileNav(false)} aria-label={link}>
         <AnimatedButton

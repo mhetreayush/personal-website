@@ -1,21 +1,15 @@
-import { useEffect, useRef } from "react";
-import { useNavLinkStore } from "./useNavLinkStore";
-import { slugify } from "@/lib/utils/slugify";
+import { useEffect, useRef } from 'react';
+import { useNavLinkStore } from './useNavLinkStore';
+import { slugify } from '@/lib/utils/slugify';
 
-const useSectionWithIntersectionObserver = ({
-  title,
-  threshold,
-}: {
-  title: string;
-  threshold?: number;
-}) => {
-  const setActive = useNavLinkStore((state) => state.setActive);
+const useSectionWithIntersectionObserver = ({ title, threshold }: { title: string; threshold?: number }) => {
+  const setActive = useNavLinkStore(state => state.setActive);
   const sectionRef = useRef(null);
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setActive(slugify(title));
+          setActive(slugify(title, '-'));
         }
       },
       {
