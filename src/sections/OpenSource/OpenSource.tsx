@@ -25,6 +25,11 @@ const MERGED_PRS = [
       </>
     ),
   },
+  {
+    owner: 'calcom',
+    repo: 'cal.com',
+    pull_number: 16661,
+  },
 ];
 
 export const OpenSource = async () => {
