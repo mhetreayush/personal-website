@@ -1,11 +1,10 @@
+import { SectionHeading } from '@/components/UI/SectionHeading';
+
 export const WhatDoIDo = () => (
   <div>
-    <h1 className="font-semibold underline underline-offset-8 mb-1">
-      What do I do?
-    </h1>
+    <SectionHeading heading="What do I do?" />
     <p>
-      I am a Full Stack Web Developer strong in frontend development. I love
-      building beautiful and responsive websites.
+      I am a Full Stack Web Developer strong in frontend development. I love building beautiful and responsive websites.
     </p>
   </div>
 );

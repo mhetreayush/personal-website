@@ -2,7 +2,7 @@ import { ExternalLinkIcon } from '@/components/AllIcons';
 import { AnimatedButton } from '@/components/AnimatedButton';
 import { Section } from '@/components/Section';
 import Image from 'next/image';
-import { CurrentlyLearning, WhatAmILookingFor, WhatDoIDo, WhoAmI } from './components';
+import { CurrentlyLearning, WhatsNextForMe, WhatDoIDo, WhoAmI } from './components';
 import heroIllustration from '../../../public/hero-ill.svg';
 const About = () => {
   return (
@@ -29,7 +29,7 @@ const About = () => {
             <div className="max-h-[50vh] md:max-h-full p-2 md:p-4 md:text-justify text-lg flex flex-col gap-y-2 justify-between overflow-y-auto relative overflow-clip pb-6">
               <WhoAmI />
               <WhatDoIDo />
-              <WhatAmILookingFor />
+              <WhatsNextForMe />
             </div>
           </AnimatedButton>
           <AnimatedButton

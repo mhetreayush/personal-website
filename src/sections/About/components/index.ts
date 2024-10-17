@@ -1,4 +1,4 @@
 export { WhoAmI } from './WhoAmI';
 export { WhatDoIDo } from './WhatDoIDo';
-export { WhatAmILookingFor } from './WhatAmILookingFor';
+export { WhatsNextForMe } from './WhatsNextForMe';
 export { CurrentlyLearning } from './CurrentlyLearning';
