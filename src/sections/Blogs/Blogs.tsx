@@ -4,7 +4,7 @@ import { blogs_data } from '@/assets/data';
 
 const Blogs = () => {
   return (
-    <Section title="Blogs" threshold={0.75}>
+    <Section title="Blogs" threshold={0.3}>
       <div className="flex flex-col gap-y-6">
         {blogs_data
           .filter(blog => !blog.hidden)
