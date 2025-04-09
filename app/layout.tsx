@@ -1,3 +1,4 @@
+import { PostHogProvider } from '@/providers/posthog-provider';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
@@ -39,7 +40,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     })(window, document, "clarity", "script", "qtb097qi4e");`}
       </Script>
 
-      <body>{children}</body>
+      <body>
+        <PostHogProvider>{children}</PostHogProvider>
+      </body>
       <Analytics />
       <SpeedInsights />
     </html>
