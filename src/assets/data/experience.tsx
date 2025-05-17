@@ -1,3 +1,4 @@
+import { CustomLink } from '@/components/UI/CustomLink';
 import { ExperienceType } from '@/lib/types';
 
 const experience_data: ExperienceType[] = [
@@ -8,7 +9,10 @@ const experience_data: ExperienceType[] = [
     link: 'https://superjoin.ai/',
     child: (
       <ul>
-        <li>Working with Google Apps Script ecosystem.</li>
+        <li>
+          Doing a lot of things, will discuss over a{' '}
+          <CustomLink href="https://cal.com/mhetre-ayush/lets-chat">call</CustomLink>.
+        </li>
       </ul>
     ),
   },
