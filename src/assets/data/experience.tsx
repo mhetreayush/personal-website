@@ -4,8 +4,23 @@ import { ExperienceType } from '@/lib/types';
 const experience_data: ExperienceType[] = [
   {
     company: 'Superjoin',
-    date: 'September 2024 - Present',
-    role: "Fullstack Developer (Founder's office)",
+    date: 'July 2025 - Present',
+    role: 'Fullstack Developer (Founding engineer)',
+    link: 'https://superjoin.ai/',
+    type: 'Full-time',
+    child: (
+      <ul>
+        <li>
+          Doing a lot of things, will discuss over a{' '}
+          <CustomLink href="https://cal.com/mhetre-ayush/lets-chat">call</CustomLink>.
+        </li>
+      </ul>
+    ),
+  },
+  {
+    company: 'Superjoin',
+    date: 'September 2024 - July 2025',
+    role: 'Fullstack Developer (Founding engineer)',
     link: 'https://superjoin.ai/',
     child: (
       <ul>

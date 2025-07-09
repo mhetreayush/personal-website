@@ -24,4 +24,5 @@ export type ExperienceType = {
   link: string;
   child: JSX.Element;
   image?: string;
+  type?: 'Internship' | 'Full-time' | 'Part-time' | 'Freelance';
 };
