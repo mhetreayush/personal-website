@@ -4,7 +4,7 @@ export const WhatsNextForMe = () => (
   <div>
     <SectionHeading heading="What's next for me?" />
     <p>
-      As I approach graduation, I&apos;m currently working as an Engineering Explorer (Intern) in the Founder&apos;s
+      I&apos;m currently working as a Founding Engineer in the Founder&apos;s
       Office at{' '}
       <strong>
         <a href="https://superjoin.ai" className="" target="_blank">
