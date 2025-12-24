@@ -28,8 +28,8 @@ const About = () => {
           >
             <div className="max-h-[50vh] md:max-h-full p-2 md:p-4 md:text-justify text-lg flex flex-col gap-y-2 justify-between overflow-y-auto relative overflow-clip pb-6">
               <WhoAmI />
-              <WhatDoIDo />
-              <WhatsNextForMe />
+              {/* <WhatDoIDo /> */}
+              {/* <WhatsNextForMe /> */}
             </div>
           </AnimatedButton>
           <AnimatedButton

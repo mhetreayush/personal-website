@@ -1,13 +1,15 @@
+import { CustomLink } from '@/components/UI/CustomLink';
 import { SectionHeading } from '@/components/UI/SectionHeading';
 
 export const WhoAmI = () => (
   <div>
     <SectionHeading heading="Who am I?" />
     <p>
-      I am a 4th (final) year 👨🏼‍🎓 student pursuing B.Tech in 💻 Computer Science and Engineering from 🏫 Vellore
-      Institute of Technology, Vellore. I am a passionate 👨🏼‍💻 developer and a tech enthusiast. I love to ✨ explore new
-      technologies and leverage them to solve real-life problems. 🕸 I have been doing web development for 2.5 years. I
-      also keep an understanding of web fundamentals, security issues and SEO.
+      I am a Full Stack Web Developer at <CustomLink href="https://superjoin.ai">Superjoin</CustomLink>, where I am
+      proposing new solutions and features, owning and shipping them end-to-end, debugging critical issues, contributing
+      in setting up systems and processes around code quality and conventions, going on customer calls and getting their
+      issues solved, with a bunch of other stuff. If you wish to know more, I'm doing a lot of things, will discuss over
+      a <CustomLink href="https://cal.com/mhetre-ayush/lets-chat">call</CustomLink>.
     </p>
   </div>
 );
